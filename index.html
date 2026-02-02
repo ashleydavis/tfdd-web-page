@@ -101,8 +101,10 @@
             <div class="lg:col-span-7 relative z-10">
                 <div class="inline-block w-16 h-1 bg-boutique-gold mb-8"></div>
                 <h1 class="font-serif text-6xl lg:text-8xl leading-[0.9] text-charcoal mb-8">
-                    The Art of <br>
-                    <span class="italic text-gray-500">Feedback.</span>
+                    Build habits<br>
+                    <span class="italic text-gray-500">and processes</span>
+                    <br />
+                    to deliver quality quickly
                 </h1>
                 <p class="text-xl text-gray-600 font-light leading-relaxed max-w-xl mb-12">
                     Deliver value. Eliminate waste. Get results quickly.<br>
@@ -141,7 +143,7 @@
 
 <!-- About The Book Section -->
 <section class="py-24 bg-white" id="about">
-    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out">
         <!-- Part 1: Value Proposition -->
         <div class="grid lg:grid-cols-2 gap-16 mb-24">
             <div>
@@ -176,6 +178,8 @@
             </div>
             
             <div class="bg-gray-50 p-10 border border-gray-100 flex flex-col justify-center">
+                <img src="./assets/feedback_loop_illustration.png" alt="Feedback Loop Illustration" class="h-48 mx-auto mb-8 animate-float" />
+
                 <div class="inline-block w-12 h-1 bg-boutique-gold mb-6"></div>
                 <h3 class="font-serif text-3xl text-charcoal mb-6">Reliable and regular feedback is the core of successful software development.</h3>
                 <p class="text-gray-600 font-light leading-relaxed">
@@ -188,10 +192,13 @@
         <div class="border-t border-gray-100 pt-24">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="font-serif text-4xl text-charcoal mb-8">About the book</h2>
+
+
                 <p class="text-xl text-gray-600 font-light leading-relaxed mb-8">
                     The Feedback-Driven Developer distills veteran coder Ashley Davis's 28+ years of experience into a comprehensive approach to creating a rapid, quality-focused development process.
                 </p>
-                <div class="text-left text-gray-600 font-light leading-relaxed space-y-6 columns-1 md:columns-2 gap-12">
+
+                <div class="text-left text-gray-600 font-light leading-relaxed space-y-6 columns-1 md:columns-2 gap-12 mt-4">
                     <p>
                         This entertaining and personal book introduces dozens of practical techniques for using feedback throughout the dev lifecycle book. You’ll see each idea demonstrated hands-on as you explore a full-stack web application. You'll learn how to plan for change, effectively refactor, set up and automate tests, and ship your software to production.
                     </p>
@@ -199,6 +206,15 @@
                         As you go, you’ll also explore refactoring into desktop and mobile versions of your applications, expanding the reach of your software. Once your software is in production, Ashley reveals how you can ensure it runs reliably with vital techniques for debugging and triaging problems in live systems.
                     </p>
                 </div>
+
+                <div class="w-32 h-32 mt-4 mx-auto bg-gray-200 rounded-full mb-8 overflow-hidden relative grayscale hover:grayscale-0 transition duration-500 border-4 border-white shadow-lg">
+                    <img src="./assets/ashley_davis_profile.jpeg" alt="Ashley Davis" class="w-full h-full object-cover">
+                </div>
+                <h2 class="font-serif text-4xl mb-4 text-charcoal">Ashley Davis</h2>
+                <p class="text-boutique-gold text-sm uppercase tracking-widest mb-8">Principal Engineer & Author</p>
+                <p class="text-xl text-gray-600 font-light italic leading-relaxed">
+                    "I wrote this book for the engineer who wants to stop guessing and start knowing. It is the culmination of 25 years of building, failing, and succeeding."
+                </p>
             </div>
         </div>
     </div>
@@ -206,7 +222,7 @@
 
 <!-- Designed for Builders Section -->
 <section class="py-32 bg-white overflow-hidden relative border-t border-gray-100">
-    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out">
         <div class="text-center mb-24">
             <h2 class="font-serif text-5xl text-charcoal mb-4">Designed for <span class="italic text-gray-400">Builders.</span></h2>
             <div class="w-12 h-0.5 bg-boutique-gold mx-auto mt-6"></div>
@@ -324,12 +340,8 @@
                         <!-- Placeholder Image representing a gallery app -->
                         <img src="./assets/photosphere.png" alt="Photosphere App Preview" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-700">
 
-                        <!-- Overlay Button -->
-                        <div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition duration-500 backdrop-blur-[2px] group-hover:backdrop-blur-none">
-                            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md border border-white/50 flex items-center justify-center text-white transform scale-90 group-hover:scale-110 transition duration-300">
-                                <svg class="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
-                        </div>
+                        <!-- Overlay -->
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition duration-500 backdrop-blur-[2px] group-hover:backdrop-blur-none" />
                     </div>
                 </div>
             </div>
@@ -340,7 +352,7 @@
 
 <!-- Recent News / Journal Section -->
 <section class="py-24 bg-gray-50 border-t border-gray-100" id="news">
-    <div class="max-w-3xl mx-auto px-6">
+    <div class="max-w-3xl mx-auto px-6 animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out">
         <div class="text-center mb-16">
             <h2 class="font-serif text-4xl text-charcoal">Latest Updates</h2>
             <div class="w-12 h-0.5 bg-boutique-gold mx-auto mt-6"></div>
@@ -349,8 +361,8 @@
         <div class="space-y-12 border-l border-gray-200 ml-3 pl-8 relative">
 
             <!-- News Item 1 (Newest) -->
-            <div class="relative">
-                <span class="absolute -left-[39px] top-1 h-5 w-5 rounded-full border-4 border-gray-50 bg-boutique-gold"></span>
+            <div class="relative animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out">
+                <span class="absolute -left-[42px] top-1 h-5 w-5 rounded-full border-4 border-gray-50 bg-boutique-gold"></span>
                 <p class="text-xs font-bold text-boutique-gold uppercase tracking-widest mb-2">Coming Soon</p>
                 <h4 class="text-lg font-bold text-charcoal mb-2">Amazon Release</h4>
                 <p class="text-gray-600 font-light leading-relaxed">
@@ -359,8 +371,8 @@
             </div>
 
             <!-- News Item 2 -->
-            <div class="relative">
-                <span class="absolute -left-[39px] top-1 h-5 w-5 rounded-full border-4 border-gray-50 bg-gray-300"></span>
+            <div class="relative animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out">
+                <span class="absolute -left-[42px] top-1 h-5 w-5 rounded-full border-4 border-gray-50 bg-gray-300"></span>
                 <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Feb 02, 2026</p>
                 <h4 class="text-lg font-bold text-charcoal mb-2">Self-Publishing Adventure</h4>
                 <p class="text-gray-600 font-light leading-relaxed">
@@ -370,9 +382,9 @@
 
             <!-- News Item 3 -->
 
-            <div class="relative">
-                <span class="absolute -left-[39px] top-1 h-5 w-5 rounded-full border-4 border-gray-50 bg-boutique-gold"></span>
-                <p class="text-xs font-bold text-boutique-gold uppercase tracking-widest mb-2">December 2025</p>
+            <div class="relative animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out">
+                <span class="absolute -left-[42px] top-1 h-5 w-5 rounded-full border-4 border-gray-50 bg-gray-300"></span>
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">December 2025</p>
                 <h4 class="text-lg font-bold text-charcoal mb-2">Renaming & New Content</h4>
                 <p class="text-gray-600 font-light leading-relaxed">
                     Rapid Fullstack Development has been renamed as <strong>The Feedback-Driven Developer</strong> - new content will be posted soon.
@@ -380,9 +392,9 @@
             </div>
 
             <!-- News Item 4 -->
-            <div class="relative">
-                <span class="absolute -left-[39px] top-1 h-5 w-5 rounded-full border-4 border-gray-50 bg-gray-300"></span>
-                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Watch Now</p>
+            <div class="relative animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out">
+                <span class="absolute -left-[42px] top-1 h-5 w-5 rounded-full border-4 border-gray-50 bg-boutique-gold"></span>
+                <p class="text-xs font-bold text-boutique-gold uppercase tracking-widest mb-2">Watch Now</p>
                 <h4 class="text-lg font-bold text-charcoal mb-2">New Talk Published</h4>
                 <p class="text-gray-600 font-light leading-relaxed mb-3">
                     A new and revised version of my talk <em>Rapid Fullstack Development</em> has been published on YouTube.
@@ -402,7 +414,7 @@
     <!-- Decorative quote mark background -->
     <div class="absolute top-20 left-10 text-[10rem] font-serif text-gray-100 leading-none opacity-50 font-bold select-none">“</div>
 
-    <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out">
         <div class="text-center mb-16">
             <h2 class="font-serif text-4xl text-charcoal">What others say</h2>
             <div class="w-12 h-0.5 bg-boutique-gold mx-auto mt-6"></div>
@@ -469,26 +481,16 @@
     </div>
 </section>
 
-<!-- Author Section -->
-<section id="author" class="py-32 relative bg-gray-50 border-t border-gray-200">
-    <div class="max-w-3xl mx-auto px-6 text-center">
-        <div class="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-8 overflow-hidden relative grayscale hover:grayscale-0 transition duration-500 border-4 border-white shadow-lg">
-            <!-- Using local asset as requested -->
-            <img src="./assets/ashley_davis_profile.jpeg" alt="Ashley Davis" class="w-full h-full object-cover">
-        </div>
-        <h2 class="font-serif text-4xl mb-4 text-charcoal">Ashley Davis</h2>
-        <p class="text-boutique-gold text-sm uppercase tracking-widest mb-8">Principal Engineer & Author</p>
-        <p class="text-xl text-gray-600 font-light italic leading-relaxed">
-            "I wrote this book for the engineer who wants to stop guessing and start knowing. It is the culmination of 25 years of building, failing, and succeeding."
-        </p>
-    </div>
-</section>
-
 <!-- Join the Adventure Section -->
 <section class="py-24 bg-white border-t border-gray-200">
     <div class="max-w-4xl mx-auto px-6 text-center">
         <div class="inline-block w-16 h-1 bg-boutique-gold mb-8"></div>
         <h2 class="font-serif text-4xl lg:text-5xl text-charcoal mb-6">I'm currently writing this book!</h2>
+
+        <div class="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-8 overflow-hidden relative grayscale hover:grayscale-0 transition duration-500 border-4 border-white shadow-lg">
+            <!-- Using local asset as requested -->
+            <img src="./assets/ashley_davis_profile.jpeg" alt="Ashley Davis" class="w-full h-full object-cover">
+        </div>
         <p class="text-xl text-gray-600 font-light mb-12">
             Please join me on this new adventure exploring rapid development techniques applied to fullstack coding.
         </p>
@@ -538,15 +540,15 @@
 <!-- Footer -->
 <footer class="bg-charcoal text-white py-20 border-t border-gray-800">
     <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-start gap-12">
-        <div class="w-50 md:w-1/2 flex flex-col gap-4">
-            <span class="font-serif text-2xl block mb-6">Ashley Davis<span class="text-boutique-gold">.</span></span>
-            <p class="text-gray-500 font-light max-w-xs">
+        <div class="md:w-2/3 flex flex-col gap-4">
+            <span class="font-serif text-2xl block mb-2">Ashley Davis<span class="text-boutique-gold">.</span></span>
+            <p class="text-gray-500 font-light leading-relaxed">
                 A software craftsman, technologist, and author with over 28 years of experience in software development, from coding to managing teams to founding companies. He has worked for a range of companies, from the tiniest startups to the largest internationals. Along the way, he has contributed back to the community through his writing and open source coding. Ashley has been contracting with businesses and founding startups for the last 10 years. He is the creator of Data-Forge Notebook and Photosphere.
             </p>
         </div>
 
         <div class="flex flex-col gap-4">
-            <h4 class="text-gray-400 uppercase tracking-widest text-xs mb-2">Connect</h4>
+            <h4 class="text-gray-400 uppercase tracking-widest text-xs mb-2">Connect With Me</h4>
             <a href="https://www.linkedin.com/in/ashleydavis75" class="text-gray-300 hover:text-white transition font-light">LinkedIn</a>
             <a href="https://twitter.com/codecapers" class="text-gray-300 hover:text-white transition font-light">Twitter / X</a>
             <a href="https://www.codecapers.com.au/about" class="text-gray-300 hover:text-white transition font-light">Codecapers</a>
@@ -555,5 +557,27 @@
 
     </div>
 </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const animatedElements = document.querySelectorAll('.animate-on-scroll');
+        animatedElements.forEach(el => observer.observe(el));
+    });
+</script>
 </body>
 </html>
