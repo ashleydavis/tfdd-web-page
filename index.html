@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin" />
+    <title>The Feedback-Driven Developer | Ashley Davis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Boutique Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    },
+                    colors: {
+                        'boutique-silver': '#BDBDBD',
+                        'boutique-grey': '#E5E5E5',
+                        'boutique-gold': '#D97706',
+                        'boutique-gold-light': '#FCD34D',
+                        'charcoal': '#1c1c1c',
+                    },
+                    backgroundImage: {
+                        'silver-sheen': 'linear-gradient(180deg, #f8f8f8 0%, #ffffff 100%)',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        pulseSlow: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1)' },
+                            '50%': { opacity: '0.8', transform: 'scale(1.1)' },
+                        }
+                    },
+                    animation: {
+                        float: 'float 6s ease-in-out infinite',
+                        pulseSlow: 'pulseSlow 8s ease-in-out infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #fff; }
+        ::-webkit-scrollbar-thumb { background: #e5e5e5; border-radius: 4px; }
+
+        .text-outline-silver {
+            -webkit-text-stroke: 1px #e5e5e5;
+            color: transparent;
+        }
+
+        /* Subtle paper grain texture */
+        .bg-grain {
+            background-color: #ffffff;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-grain text-charcoal antialiased overflow-x-hidden selection:bg-boutique-gold/20 selection:text-black">
+
+<!-- Navigation -->
+<nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-500">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="flex justify-between items-center h-24">
+            <a href="#" class="font-serif text-2xl tracking-tight hover:opacity-70 transition duration-300">
+                Ashley Davis<span class="text-boutique-gold">.</span>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-12">
+                <a href="#about" class="text-sm uppercase tracking-widest hover:text-boutique-gold transition">The Book</a>
+                <a href="#demo" class="text-sm uppercase tracking-widest hover:text-boutique-gold transition">Demo</a>
+                <a href="#news" class="text-sm uppercase tracking-widest hover:text-boutique-gold transition">News</a>
+                <a href="#testimonials" class="text-sm uppercase tracking-widest hover:text-boutique-gold transition">Reviews</a>
+            </div>
+
+            <a href="https://codecapers.gumroad.com/l/rapid-fullstack-development" class="group relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-medium tracking-tighter text-charcoal bg-gray-100 rounded-full transition duration-300 ease-out hover:text-white hover:bg-black">
+                <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-boutique-gold to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out"></span>
+                <span class="relative">Purchase $27 AUD</span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="relative pt-40 pb-24 lg:pt-52 lg:pb-32 overflow-hidden">
+    <!-- Background Silver "2.5" -->
+    <div class="absolute top-20 right-0 -z-10 opacity-20 select-none pointer-events-none">
+        <span class="text-[20rem] lg:text-[30rem] font-bold text-boutique-grey font-serif leading-none">2.5</span>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 relative">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+            <!-- Text Column -->
+            <div class="lg:col-span-7 relative z-10">
+                <div class="inline-block w-16 h-1 bg-boutique-gold mb-8"></div>
+                <h1 class="font-serif text-6xl lg:text-8xl leading-[0.9] text-charcoal mb-8">
+                    The Art of <br>
+                    <span class="italic text-gray-500">Feedback.</span>
+                </h1>
+                <p class="text-xl text-gray-600 font-light leading-relaxed max-w-xl mb-12">
+                    Deliver value. Eliminate waste. Get results quickly.<br>
+                    A curated guide to the <span class="border-b border-boutique-gold">feedback-driven</span> philosophy for senior engineers and technical leaders.
+                </p>
+
+                <div class="flex items-center gap-6">
+                    <a href="https://codecapers.gumroad.com/l/rapid-fullstack-development" class="px-8 py-4 bg-charcoal text-white font-serif italic text-lg hover:bg-boutique-gold transition duration-300 shadow-xl">
+                        Start Reading
+                    </a>
+                    <a href="#about" class="group flex items-center gap-2 text-charcoal hover:text-boutique-gold transition">
+                        <span class="uppercase tracking-widest text-sm border-b border-gray-300 group-hover:border-boutique-gold pb-1 transition">Explore The Process</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Visual Column -->
+            <div class="lg:col-span-5 relative">
+                <!-- Gold Ring Accent -->
+                <div class="absolute -top-10 -right-10 w-40 h-40 rounded-full border border-boutique-grey opacity-50 animate-float" style="animation-delay: 1s;"></div>
+                <div class="absolute top-1/2 -left-20 w-32 h-32 rounded-full border-2 border-boutique-gold/30 blur-sm animate-float"></div>
+
+                <!-- Book Mockup -->
+                <div class="relative z-10 transform transition duration-700 hover:scale-[1.02]">
+                    <div class="aspect-[3/4] bg-white shadow-2xl border border-gray-100 p-8 flex flex-col justify-center items-center text-center relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-boutique-gold"></div>
+                        <h2 class="font-serif text-4xl text-charcoal leading-tight mb-2">The<br>Feedback<br>Driven<br>Developer</h2>
+                        <div class="w-8 h-px bg-gray-300 my-6"></div>
+                        <p class="font-sans text-xs uppercase tracking-[0.2em] text-gray-400">Ashley Davis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- The Process -->
+<section class="py-24 bg-white" id="about">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid md:grid-cols-3 gap-16 lg:gap-24">
+            <div class="group cursor-pointer">
+                <span class="block text-6xl font-serif text-transparent text-outline-silver mb-6 group-hover:text-boutique-gold transition duration-500">01</span>
+                <h3 class="text-xl font-medium mb-4">Structure the Process</h3>
+                <p class="text-gray-500 font-light leading-relaxed">
+                    Learn to build an efficient development engine. Move from chaos to a structured flow where feedback drives every decision.
+                </p>
+            </div>
+            <div class="group cursor-pointer">
+                <span class="block text-6xl font-serif text-transparent text-outline-silver mb-6 group-hover:text-boutique-gold transition duration-500">02</span>
+                <h3 class="text-xl font-medium mb-4">Eliminate Waste</h3>
+                <p class="text-gray-500 font-light leading-relaxed">
+                    Identify the noise. This book teaches you to cut away the processes that do not deliver direct value to your users.
+                </p>
+            </div>
+            <div class="group cursor-pointer">
+                <span class="block text-6xl font-serif text-transparent text-outline-silver mb-6 group-hover:text-boutique-gold transition duration-500">03</span>
+                <h3 class="text-xl font-medium mb-4">Deliver Results</h3>
+                <p class="text-gray-500 font-light leading-relaxed">
+                    The goal isn't the code. It's delivering user satisfaction. See the live results in the <a href="#demo" class="border-b border-boutique-gold text-black">Photosphere Demo</a> below.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NEW SECTION: Live Demo Project -->
+<section class="py-32 bg-charcoal text-white relative overflow-hidden" id="demo">
+    <!-- Ambient Gold Glow -->
+    <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-boutique-gold/10 rounded-full blur-3xl animate-pulseSlow pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-boutique-gold/5 rounded-full blur-3xl animate-pulseSlow pointer-events-none" style="animation-delay: 2s"></div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- Content -->
+            <div class="order-2 lg:order-1">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-gray-600 bg-gray-800 text-boutique-gold text-xs uppercase tracking-widest mb-6 font-medium">
+                    <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                    Live Project
+                </div>
+                <h2 class="font-serif text-4xl lg:text-5xl mb-6 leading-tight">
+                    Don't just read about it. <br>
+                    <span class="text-boutique-gold italic">Build it.</span>
+                </h2>
+                <p class="text-lg text-gray-400 font-light leading-relaxed mb-8">
+                    Theory is useless without practice. In this book, we move beyond "Hello World" to construct <strong>Photosphere</strong>—a complex, production-ready image gallery.
+                </p>
+                <p class="text-gray-400 font-light leading-relaxed mb-10">
+                    Follow along with the coding and build a fullstack application while applying the philosophy of rapid development. It is the proving ground for every concept you learn.
+                </p>
+
+                <a href="https://photosphere-100k.codecapers.com.au/" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-white text-charcoal font-serif italic text-lg hover:bg-boutique-gold hover:text-white transition duration-300 rounded-sm group">
+                    Launch Live Demo
+                    <svg class="w-5 h-5 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+            </div>
+
+            <!-- Interactive Browser Visual -->
+            <div class="order-1 lg:order-2 relative group perspective-1000">
+                <!-- Decorative back layers -->
+                <div class="absolute inset-0 bg-boutique-gold transform translate-x-4 translate-y-4 rounded-lg opacity-20 group-hover:translate-x-6 group-hover:translate-y-6 transition duration-500"></div>
+
+                <!-- The "Browser" -->
+                <div class="relative bg-gray-900 rounded-lg shadow-2xl border border-gray-700 overflow-hidden transform group-hover:-translate-y-2 transition duration-500">
+                    <!-- Browser Header -->
+                    <div class="h-10 bg-gray-800 border-b border-gray-700 flex items-center px-4 gap-1">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        <div class="ml-4 px-3 py-1 bg-gray-900 rounded text-xs text-gray-500 font-mono w-full truncate">photosphere-100k.codecapers.com.au</div>
+                    </div>
+                    <!-- Browser Content (Screenshot simulation) -->
+                    <div class="relative aspect-video bg-gray-800 group">
+                        <!-- Placeholder Image representing a gallery app -->
+                        <img src="./assets/photosphere.png" alt="Photosphere App Preview" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-700">
+
+                        <!-- Overlay Button -->
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition duration-500 backdrop-blur-[2px] group-hover:backdrop-blur-none">
+                            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md border border-white/50 flex items-center justify-center text-white transform scale-90 group-hover:scale-110 transition duration-300">
+                                <svg class="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Recent News / Journal Section -->
+<section class="py-24 bg-gray-50 border-t border-gray-100" id="news">
+    <div class="max-w-3xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="font-serif text-4xl text-charcoal">Latest Updates</h2>
+            <div class="w-12 h-0.5 bg-boutique-gold mx-auto mt-6"></div>
+        </div>
+
+        <div class="space-y-12 border-l border-gray-200 ml-3 pl-8 relative">
+
+            <!-- News Item 1 (Newest) -->
+            <div class="relative">
+                <span class="absolute -left-[39px] top-1 h-5 w-5 rounded-full border-4 border-gray-50 bg-boutique-gold"></span>
+                <p class="text-xs font-bold text-boutique-gold uppercase tracking-widest mb-2">Latest Announcement</p>
+                <h4 class="text-lg font-bold text-charcoal mb-2">Renaming & New Content</h4>
+                <p class="text-gray-600 font-light leading-relaxed">
+                    Rapid Fullstack Development has been renamed as <strong>The Feedback-Driven Developer</strong> - new content will be posted soon.
+                </p>
+            </div>
+
+            <!-- News Item 2 -->
+            <div class="relative">
+                <span class="absolute -left-[39px] top-1 h-5 w-5 rounded-full border-4 border-gray-50 bg-gray-300"></span>
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Jan 08, 2025</p>
+                <h4 class="text-lg font-bold text-charcoal mb-2">Manning Publications Partnership</h4>
+                <p class="text-gray-600 font-light leading-relaxed">
+                    Manning have picked up the contract for <em>Rapid Fullstack Development</em>. In 2025, it is being reborn under the new name: <strong>The Feedback-Driven Developer</strong>. The Manning early access program (MEAP) will start soon!
+                </p>
+            </div>
+
+            <!-- News Item 3 -->
+            <div class="relative">
+                <span class="absolute -left-[39px] top-1 h-5 w-5 rounded-full border-4 border-gray-50 bg-gray-300"></span>
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Sep 05, 2024</p>
+                <h4 class="text-lg font-bold text-charcoal mb-2">Version 0.9 Released</h4>
+                <p class="text-gray-600 font-light leading-relaxed">
+                    The early access edition of <em>Rapid Fullstack Development</em> is updated, including the final chapter 9 and many revisions.
+                </p>
+            </div>
+
+            <!-- News Item 4 -->
+            <div class="relative">
+                <span class="absolute -left-[39px] top-1 h-5 w-5 rounded-full border-4 border-gray-50 bg-gray-300"></span>
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Watch Now</p>
+                <h4 class="text-lg font-bold text-charcoal mb-2">New Talk Published</h4>
+                <p class="text-gray-600 font-light leading-relaxed mb-3">
+                    A new and revised version of my talk <em>Rapid Fullstack Development</em> was live streamed for Manning and is now published on YouTube.
+                </p>
+                <a href="https://www.youtube.com" target="_blank" class="inline-flex items-center text-sm font-medium text-boutique-gold hover:text-black transition">
+                    Watch on YouTube
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-32 bg-white relative border-t border-gray-100">
+    <!-- Decorative quote mark background -->
+    <div class="absolute top-20 left-10 text-[10rem] font-serif text-gray-100 leading-none opacity-50 font-bold select-none">“</div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="font-serif text-4xl text-charcoal">What others say</h2>
+            <div class="w-12 h-0.5 bg-boutique-gold mx-auto mt-6"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-10">
+            <!-- Testimonial 1 -->
+            <div class="bg-gray-50 p-10 shadow-sm border border-gray-100 relative group hover:shadow-xl transition duration-500">
+                <div class="mb-6">
+                    <div class="flex text-boutique-gold gap-1 text-sm">★★★★★</div>
+                </div>
+                <p class="font-serif italic text-lg text-gray-600 mb-8 leading-relaxed">
+                    "Rapid FullStack Development is much more than just a book—it's a masterclass. It's akin to having a rare and exceptional mentor, a consummate professional with astounding technical expertise guiding me through every phase."
+                </p>
+                <div class="flex items-center gap-4 border-t border-gray-200 pt-6">
+                    <div class="w-10 h-10 rounded-full bg-gray-200 overflow-hidden grayscale">
+                        <img src="https://tfdd.codecapers.com.au/assets/images/testimonials/parth.jpg" alt="Parth Sigdel" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-charcoal uppercase tracking-wider">Parth Sigdel</h4>
+                        <p class="text-xs text-gray-400 font-light">Full Stack Developer, Andisor</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-gray-50 p-10 shadow-sm border border-gray-100 relative group hover:shadow-xl transition duration-500 md:-translate-y-6">
+                <div class="mb-6">
+                    <div class="flex text-boutique-gold gap-1 text-sm">★★★★★</div>
+                </div>
+                <p class="font-serif italic text-lg text-gray-600 mb-8 leading-relaxed">
+                    "As a developer with over 10 years of experience, it was a satisfying experience for me to watch the complex, yet reliable, and working software get built by continuously adding small simple steps."
+                </p>
+                <div class="flex items-center gap-4 border-t border-gray-200 pt-6">
+                    <div class="w-10 h-10 rounded-full bg-gray-200 overflow-hidden grayscale">
+                        <img src="https://tfdd.codecapers.com.au/assets/images/testimonials/shant.jfif" alt="Shant Dashjian" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-charcoal uppercase tracking-wider">Shant Dashjian</h4>
+                        <p class="text-xs text-gray-400 font-light">Senior Software Engineer, Scrimba</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-gray-50 p-10 shadow-sm border border-gray-100 relative group hover:shadow-xl transition duration-500">
+                <div class="mb-6">
+                    <div class="flex text-boutique-gold gap-1 text-sm">★★★★★</div>
+                </div>
+                <p class="font-serif italic text-lg text-gray-600 mb-8 leading-relaxed">
+                    "Ashley's illustrations and diagrams make a massive difference for a beginner like me who relies on visual breakdowns to grasp new concepts. I would highly recommend this."
+                </p>
+                <div class="flex items-center gap-4 border-t border-gray-200 pt-6">
+                    <div class="w-10 h-10 rounded-full bg-gray-200 overflow-hidden grayscale">
+                        <img src="https://tfdd.codecapers.com.au/assets/images/testimonials/furqan.jfif" alt="Furqan ur Rehman" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-charcoal uppercase tracking-wider">Furqan ur Rehman</h4>
+                        <p class="text-xs text-gray-400 font-light">Digital Marketer, Pera Wallet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lifestyle Section -->
+<section class="py-32 bg-white overflow-hidden relative border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="flex flex-col lg:flex-row items-center gap-16">
+            <!-- Image Collage -->
+            <div class="lg:w-1/2 relative">
+                <div class="relative z-10 w-4/5">
+                    <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Office workspace" class="grayscale hover:grayscale-0 transition duration-700 shadow-2xl border-4 border-white">
+                </div>
+                <div class="absolute top-20 -right-4 w-3/5 z-20">
+                    <img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Reading book" class="shadow-2xl border-8 border-white">
+                </div>
+                <!-- The Orange Ring Accent -->
+                <div class="absolute -bottom-10 -left-10 w-32 h-32 rounded-full border-[12px] border-boutique-gold opacity-80 z-0"></div>
+            </div>
+
+            <!-- Text Content -->
+            <div class="lg:w-1/2 lg:pl-16">
+                <h2 class="font-serif text-5xl text-charcoal mb-8">Designed for <br> <span class="italic text-gray-400">Deep Work.</span></h2>
+                <p class="text-lg text-gray-600 font-light leading-relaxed mb-8">
+                    Whether you are reading in a privacy pod at the airport or relaxing in your sunroom, the insights inside are designed to be digested in moments of focus.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <span class="text-boutique-gold font-serif italic text-xl">01.</span>
+                        <p class="text-sm text-gray-500 uppercase tracking-wide pt-1">Micro-chapter format</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="text-boutique-gold font-serif italic text-xl">02.</span>
+                        <p class="text-sm text-gray-500 uppercase tracking-wide pt-1">High-quality interior photography</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Author Section -->
+<section id="author" class="py-32 relative bg-gray-50 border-t border-gray-200">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+        <div class="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-8 overflow-hidden relative grayscale hover:grayscale-0 transition duration-500 border-4 border-white shadow-lg">
+            <!-- Using local asset as requested -->
+            <img src="./assets/ashley_davis_profile.jpeg" alt="Ashley Davis" class="w-full h-full object-cover">
+        </div>
+        <h2 class="font-serif text-4xl mb-4 text-charcoal">Ashley Davis</h2>
+        <p class="text-boutique-gold text-sm uppercase tracking-widest mb-8">Principal Engineer & Author</p>
+        <p class="text-xl text-gray-600 font-light italic leading-relaxed">
+            "I wrote this book for the engineer who wants to stop guessing and start knowing. It is the culmination of 25 years of building, failing, and succeeding."
+        </p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-charcoal text-white py-20 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-start gap-12">
+        <div>
+            <span class="font-serif text-2xl block mb-6">Ashley Davis<span class="text-boutique-gold">.</span></span>
+            <p class="text-gray-500 font-light max-w-xs">
+                Software craftsmanship for the modern era.
+            </p>
+        </div>
+
+        <div class="flex flex-col gap-4">
+            <h4 class="text-gray-400 uppercase tracking-widest text-xs mb-2">Connect</h4>
+            <a href="https://www.linkedin.com/in/ashleydavis75" class="text-gray-300 hover:text-white transition font-light">LinkedIn</a>
+            <a href="https://twitter.com/codecapers" class="text-gray-300 hover:text-white transition font-light">Twitter / X</a>
+            <a href="https://www.codecapers.com.au/about" class="text-gray-300 hover:text-white transition font-light">Codecapers</a>
+        </div>
+
+        <div class="flex flex-col gap-4">
+            <h4 class="text-gray-400 uppercase tracking-widest text-xs mb-2">Newsletter</h4>
+            <form class="flex border-b border-gray-600 pb-2">
+                <input type="email" placeholder="Your email address" class="bg-transparent border-none focus:ring-0 text-white placeholder-gray-600 w-full font-light">
+                <button type="submit" class="text-boutique-gold hover:text-white transition uppercase text-xs tracking-widest font-bold">Join</button>
+            </form>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

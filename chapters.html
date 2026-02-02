@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin" />
+    <title>Micro Chapters | Feedback-Driven Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+                    colors: { brand: { 500: '#0ea5e9' } }
+                }
+            }
+        }
+    </script>
+    <style>
+        .ribbon-gradient { background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+<!-- Navbar (Same as Index for smooth transition) -->
+<nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <div class="flex-shrink-0 flex items-center gap-2">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg ribbon-gradient"></div>
+                    <span class="font-bold text-xl tracking-tight text-slate-900">Feedback-Driven Dev</span>
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-slate-600 hover:text-indigo-600 font-medium transition">Home</a>
+                <span class="text-indigo-600 font-bold border-b-2 border-indigo-600">Micro Chapters</span>
+            </div>
+            <div>
+                <a href="https://codecapers.gumroad.com/l/rapid-fullstack-development" class="bg-slate-900 text-white px-4 py-2 rounded-full font-semibold text-sm">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="pt-32 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+        <h1 class="text-4xl font-bold text-slate-900 mb-4">Micro Chapters</h1>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Dive into bite-sized excerpts from the book. These micro-chapters are designed to give you immediate value in 5 minutes or less.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Chapter Card 1 -->
+        <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition group">
+            <div class="h-3 bg-indigo-500"></div>
+            <div class="p-6">
+                <span class="text-xs font-bold tracking-wider text-slate-400 uppercase mb-2 block">Chapter 1</span>
+                <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-indigo-600 transition">The Feedback Loop</h3>
+                <p class="text-slate-600 mb-4 line-clamp-3">
+                    Why do we wait until the end of a sprint to show our work? The most successful teams shorten the loop to hours, not weeks.
+                </p>
+                <a href="#" class="text-indigo-600 font-semibold text-sm hover:underline">Read Excerpt &rarr;</a>
+            </div>
+        </article>
+
+        <!-- Chapter Card 2 -->
+        <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition group">
+            <div class="h-3 bg-purple-500"></div>
+            <div class="p-6">
+                <span class="text-xs font-bold tracking-wider text-slate-400 uppercase mb-2 block">Chapter 3</span>
+                <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-purple-600 transition">Metrics that Matter</h3>
+                <p class="text-slate-600 mb-4 line-clamp-3">
+                    Stop measuring lines of code. Start measuring "Time to Value". We discuss how to instrument your application to tell you the truth.
+                </p>
+                <a href="#" class="text-purple-600 font-semibold text-sm hover:underline">Read Excerpt &rarr;</a>
+            </div>
+        </article>
+
+        <!-- Chapter Card 3 -->
+        <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition group">
+            <div class="h-3 bg-pink-500"></div>
+            <div class="p-6">
+                <span class="text-xs font-bold tracking-wider text-slate-400 uppercase mb-2 block">Chapter 5</span>
+                <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-pink-600 transition">Manual TDD</h3>
+                <p class="text-slate-600 mb-4 line-clamp-3">
+                    You don't always need an automated test suite to practice Test Driven Development. Learn the philosophy of testing first, even manually.
+                </p>
+                <a href="#" class="text-pink-600 font-semibold text-sm hover:underline">Read Excerpt &rarr;</a>
+            </div>
+        </article>
+    </div>
+</div>
+
+</body>
+</html>
