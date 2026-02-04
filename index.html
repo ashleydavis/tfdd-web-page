@@ -596,18 +596,37 @@
             </p>
         </div>
 
-        <div class="flex flex-col gap-4">
-            <h4 class="text-gray-400 uppercase tracking-widest text-xs mb-2">Connect With Me</h4>
-            <a href="https://www.linkedin.com/in/ashleydavis75" class="text-gray-300 hover:text-white transition font-light">LinkedIn</a>
-            <a href="https://twitter.com/codecapers" class="text-gray-300 hover:text-white transition font-light">Twitter / X</a>
-            <a href="https://www.codecapers.com.au/about" class="text-gray-300 hover:text-white transition font-light">Codecapers</a>
-        </div>
+                <div class="flex flex-col gap-4">
 
+                    <h4 class="text-gray-400 uppercase tracking-widest text-xs mb-2">Connect With Me</h4>
 
-    </div>
-</footer>
+                    <a href="https://www.linkedin.com/in/ashleydavis75" class="text-gray-300 hover:text-white transition font-light">LinkedIn</a>
+
+                    <a href="https://twitter.com/codecapers" class="text-gray-300 hover:text-white transition font-light">Twitter / X</a>
+
+                    <a href="https://www.codecapers.com.au/about" class="text-gray-300 hover:text-white transition font-light">Codecapers</a>
+
+                </div>
+
+            </div>
+
+        
+
+            <div class="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 font-light max-w-7xl mx-auto px-6 lg:px-12">
+
+                <p>&copy; <span id="current-year"></span> Ashley Davis. All rights reserved.</p>
+
+                <p class="mt-2 md:mt-0">Created by <a href="https://www.nunki.com.au" target="_blank" class="hover:text-white transition-colors">Torsten Schmidt</a></p>
+
+            </div>
+
+        </footer>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
+        // Dynamic Year
+        const yearSpan = document.getElementById('current-year');
+        if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
         // Scroll Animation Observer
         const observerOptions = {
             root: null,
