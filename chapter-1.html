@@ -143,363 +143,303 @@
             <div class="inline-block w-16 h-1 bg-boutique-gold mb-8"></div>
             <h1 id="working-and-valuable" class="font-serif text-5xl md:text-6xl text-charcoal mb-8 leading-tight">1 Working <span class="italic text-gray-500">and</span> valuable</h1>
             
-            <h2 id="gearing-your-process" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">Gearing your process for rapid pace</h2>
+            <h2 class="font-serif text-3xl text-charcoal mb-6 mt-12">Gearing your process for continuous feedback</h2>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In this chapter, you will learn:</p>
             <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
-                <li>The who, what, why and how of rapid development</li>
-                <li>About the philosophy of rapid development</li>
+                <li>A philosophy for effective software development</li>
+                <li>Why feedback matters when building software</li>
                 <li>About the example application we'll be building in this book</li>
             </ul>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">This is a book about rapid development. But it isn’t just about being a fast <em>coder</em>. By itself being able to write code quickly is not a worthy goal. It’s not even a useful goal.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">This is a book about delivering software at a rapid pace. But it isn’t just about being a fast coder. By itself being able to write code quickly is not a worthy goal. It’s not even a useful goal.</p>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
-                <h6 class="font-bold text-lg mb-2">As a <em>software developer</em> you must be able to produce <em>working</em> and <em>valuable</em> code.</h6>
+                <h6 class="font-bold text-lg mb-2">As a <em>software developer</em> you must be able to produce code that is <em>working</em>, <em>reliable</em> and <em>valuable</em> in a reasonable time frame.</h6>
             </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">If you can't write code that works, if you can't write code that's valuable, there's little point being able to write code quickly. The real trick to moving quickly is to focus on the aspects of development that help you build your code the <em>right</em> way and indeed to make sure that it is the <em>right</em> code.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">If you can't write code that works, or if you can't write code that's valuable, there's little point being able to write code quickly. The real trick to moving at a rapid pace is to focus on the aspects of development that help you build your code the <em>right</em> way and indeed to make sure that it is the <em>right</em> code.</p>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">When we create <em>broken</em> code (it’s so easy to do) we stifle our future progress.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">When we write the <em>wrong</em> code, the work we have done is ultimately wasted (which so often happens).</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">This book will help you to create working and valuable code, quickly. But we can't do that without building a solid foundation for good coding.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">When we create <em>unreliable</em> code (again so easy), for example code that only runs on our computer but doesn’t work in production or doesn’t work on our customers’ devices, that’s code that by definition isn’t going to be useful.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">When we travel far writing code in the <em>wrong</em> direction, the work we have done is ultimately wasted (which so often happens).</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">How do we deliver code that is working, reliable and valuable as quickly as possible? You might have guessed already that the main answer is feedback. We need fast, almost immediate feedback, and we need it continuously through our development process. This book will help you build an effective development process to create working and valuable code, quickly. But we can't do that without building a solid foundation for fast and continuous feedback. In this chapter we start with a theoretical philosophy for software development based on continuous feedback, before spending multiple chapters learning how to put the theory into practice.</p>
 
             <h1 id="1-1-journey" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.1 A software developer’s journey</h1>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6"><em>Rapid Fullstack Development</em> is a book that gives you, a fullstack developer (or someone working towards that) the help you need to achieve your goal of becoming a better developer, indeed a faster developer, but we’ll do it in the right way.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Well, in truth, there is no right way to do this. We are all different and there are as many different ways to <em>do</em> software development as there are developers. We each learn in our own unique way and there simply is no <em>one size fits all</em> solution. Software development is too complicated for that and relies too much on situation, context, judgment and experience. The thing that makes <em>you</em> a good software developer might very well be different to the thing that works for someone else.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">One thing I know for sure is that goals alone aren’t enough to achieve anything. Goals can’t be fulfilled without having the habits to back them up. Your habits will define you. Create good habits and you will become a good developer. Create bad habits and … well you get the idea.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">You already have the goal of improving yourself as a developer, but you still need some help creating the habits that push you toward that goal.</p>
-
-            <h1 id="1-2-who-is-this-book-for" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.2 Who is this book for?</h1>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">This book is for JavaScript and/or TypeScript developers who already know the basics of their programming language and are looking for pathways to a higher level of skill.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">If you don’t know JavaScript or TypeScript you can still read this book, but you will probably have to put in extra effort (using other resources) while reading to make sure you understand the code examples.</p>
-            <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
-                <h5 class="font-bold text-xl mb-2">Learning JavaScript</h5>
-                <h6 class="font-bold text-lg mb-2">Here are some recommended resources for learning JavaScript:</h6>
-                <h6 class="mb-1">- <strong>You don’t know JS Yet</strong> by Kyle Simpson</h6>
-                <h6 class="mb-1">- <strong>Eloquent JavaScript</strong> by Marjin Haverbeke</h6>
-                <h6 class="mb-1">- <strong>The Modern JavaScript Tutorial</strong> by Ilya Kantor</h6>
-            </blockquote>
-
-            <h1 id="1-3-what-will-i-learn" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.3 What will I learn?</h1>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We will travel far together in this book. I will impart upon you my experience and my judgment and you will learn habits that can help you write good code, quickly.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In this chapter we start with the theory of rapid development. After chapter one though we dispense with theory and get into the practice of rapid development.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Together we will build an application and you will spend most of the book experiencing <em>how</em> to be a rapid developer.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Adopting a feedback-driven approach to creating software helps you achieve your goal of becoming a better developer, indeed a faster developer, one who consistently delivers working, reliable and valuable code, but we’ll do that in the right way.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Well, in truth, there is no single right way to do this and there are many wrong ways. We are all different and there are as many different ways to <em>do</em> software development as there are developers. But some ways work better than others.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We each learn in our own unique way and there is simply no <em>one size fits all</em> solution. Software development is too complicated for that and relies too much on situation, context, judgment and experience. There are many different ways to approach it that can work. There are many different ways to do it, some of which work for some teams but not for others. The thing that makes <em>you</em> a good software developer might very well be different to the thing that works for someone else. So please keep an open mind as you read this book. I’m certain many of the techniques herein will work for you, but there are sure to be some that don’t resonate and some that you will need to adapt to your own personal style.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">One thing I know for sure is that goals alone aren’t enough to achieve anything. Goals can’t be fulfilled without having the habits to back them up. Your habits will define you. Create good habits and you will become a consistently good developer. Create bad habits and … well, you get the idea.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">You already have the goal of improving yourself as a developer, but you still need some help creating the habits that push you toward that goal. Through this book you will learn principles, practices and techniques that will help you achieve your goals of delivering better and more useful software more quickly. We’ll be building these habits from chapter 2 where we’ll be working through this book's example of feedback-driven development.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">This book is for working developers who already know the basics of a programming language and are looking for pathways to a higher level of skill. To get the most of this book you should be able to:</p>
+            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
+                <li>Get the gist of simple JavaScript or TypeScript code examples</li>
+                <li>Use the command line to create and change directories, run commands, etc.</li>
+                <li>Use a text editor or IDE such Visual Studio Code</li>
+            </ul>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It will also help if you know the basics of using Git, but it’s not completely necessary because I’ll explain the commands we will use along the way.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">If you don’t know JavaScript or TypeScript you can still read this book, but you may need to put in extra effort to make sure you understand the code examples.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In this chapter we start with a lightweight theory of effective software development. After chapter one though we dispense with theory and get into the actual practice of software development supported by continuous feedback. Together we will build an application and you will spend most of the book experiencing the development process.</p>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Generally, our goals are these:</p>
             <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
                 <li>Create a rapid, but sustainable, pace of development</li>
                 <li>Improve our probability of producing working code</li>
                 <li>Increase the value of the code we write</li>
-                <li>Improve our development cadence: the rate at which we produce <em>working</em> and <em>valuable</em> code.</li>
+                <li>Improve our development cadence: the rate at which we produce code that is working, reliable and valuable.</li>
+                <li>Use constant feedback to assess our work and make course corrections towards more effective development and a better product.</li>
             </ul>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">This book is accompanied by many working code examples for you to follow along with and a complete non-trivial example application called <em>Photosphere</em> (scroll down to figure 1.5 to see how it will eventually look).</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">This doesn’t work without you trying it for yourself. Only by following along with the coding (starting in Chapter 2) can you really experience it. Then you must apply what you learn to your own development process. Take what works for you, adapt what you can and discard the rest. That’s a winning system that leads you to being an experienced software developer.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">This book is accompanied by many working code examples for you to follow along with and a complete non-trivial example application called <em>Photosphere</em> (see figure 1.7 toward the end of this chapter to see how it will eventually look).</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">This doesn’t work without you trying it for yourself. Only by following along with the coding (starting in Chapter 2) can you really experience it. Then you must apply what you learn to your own development process. Take what works for you, adapt what you can and discard the rest. That’s a winning system that leads you to becoming a more seasoned software developer.</p>
 
-            <h1 id="1-4-prerequisites" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.4 What do I need to know?</h1>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">To get the most of this book you should already know the following:</p>
-            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
-                <li>The basics of JavaScript or TypeScript (at least being able to get the gist of code examples)</li>
-                <li>The basics of using the command line (creating directories, changing directories, running commands, etc)</li>
-                <li>How to use a text editor or IDE (e.g. Notepad++ or Visual Studio Code)</li>
-            </ul>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It will also help if you know the basics of using Git, but it’s not completely necessary because I’ll explain the commands we will use along the way.</p>
-
-            <h1 id="1-5-fastest-way" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.5 The fastest way to write code</h1>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Before we really get into it, I have a question to ask you:</p>
+            <h1 id="1-2-fastest-way" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.2 The fastest way to write code</h1>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Before we really get into it, I have a question for you:</p>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
                 <h6 class="font-bold text-lg mb-2">What’s the fastest way to write code?</h6>
             </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Think about this question as you read this chapter. I’ll give you <em>my</em> answer soon.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It might surprise you!</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6"><em>HINT: We can be faster using AI, but that isn't the fastest way to write code.</em></p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Think about this question as you read this chapter. I’ll give you <em>my</em> answer soon. It might surprise you!</p>
 
-            <h1 id="1-6-what-is-rapid-development" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.6 What is rapid development?</h1>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Producing reams and reams of code quickly isn’t necessarily <em>rapid development</em>:</p>
+            <h1 id="1-3-virtues" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.3 Virtues of effective development</h1>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Producing reams of code quickly isn’t necessarily productive:</p>
             <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
                 <li>When the code produced is unreliable and causes problems, it’s counter productive.</li>
-                <li>When the code doesn’t meet the needs of the user, your effort has been partially, and sometimes completely, wasted.</li>
+                <li>When the code doesn’t meet the needs of the customer, your effort has been partially, and sometimes completely, wasted.</li>
             </ul>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Of course, being able to write code quickly is part of it. As a professional developer it’s best if you can type quickly and without looking at the keyboard. Ongoing effort to <em>master</em> your programming language is time well spent. Being able to “think in code” really does help, but that takes a lot of practice and experience.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">You should be pleased to realize that coding quickly is not the full story of rapid development. Your code also has to work. It has to be reliable. And most importantly your code has to be valuable. If you know how to produce working and valuable code, even slowly, you will already be able to outperform many other developers.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Rapid development needs a development process that encourages these attributes for our code:</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Being able to write code quickly is only a very small part of it. And now that we are using AI the speed of writing code is even less important. As a professional developer it’s best if you can type quickly and without looking at the keyboard. Ongoing effort to <em>master</em> your programming language is time well spent. Being able to “think in code” really does help, but that takes a lot of practice and experience.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">You should be pleased to realize that being able to write code quickly was never particularly important for effective software development. Your code also has to work. It has to be reliable. But most importantly your code has to be valuable. If you know how to produce code that is working, reliable and valuable, even slowly, you will already be able to outperform many other developers, many of whom might be outpacing you - but only to produce code that doesn’t meet these criteria.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">A good development process encourages these virtues for our code:</p>
             <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
                 <li>Working</li>
                 <li>Reliable</li>
                 <li>Valuable</li>
             </ul>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">More than anything rapid development is a state of mind. It’s a commitment to improving our productivity and effectiveness. It’s an attitude that you can adopt to accelerate your journey toward being a better developer, progress your career and ultimately, get more satisfaction from your job.</p>
-
-            <h1 id="1-7-achieving-rapid-development" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.7 Achieving rapid development</h1>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The question now is how do we achieve rapid development?</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We’ll achieve it by through the following principles:</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The key to building these virtues into our development practice is <em>feedback</em>:</p>
             <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
-                <li>Creating a rapid pace</li>
+                <li>How do we know if our code works? We test it. That’s feedback.</li>
+                <li>How do we know if our code is valuable and reliable? We should test it in production. We should test it on our customer device. Ultimately we should check in with our customer and ask them how it’s doing. Or better yet, watch our customers using our product. Again that’s feedback.</li>
+                <li>How do we know our development process is effective at producing working, reliable and valuable code? We should assess this continuously during development. Yet more feedback.</li>
+            </ul>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Many times in this book I will mention <em>our customer</em>. I believe that a <em>customer-focused</em> approach to software development is one of the best ways to ensure that we are committed to building the right thing in the right way - whatever that happens to mean for our given business, project, team or customer. For many of you reading this, <em>customer</em> will sound like the wrong term to use. So please mentally swap <em>customer</em> with whatever term you feel is the most appropriate proxy for you (e.g. boss, lead developer, product manager, colleagues, or end-user).</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Building good feedback loops into our development process is the best way to make constant course corrections to hone in on better code, better product and better process.</p>
+
+            <h1 id="1-4-feedback-driven" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.4 Feedback-driven development</h1>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">An effective development process is one that is frequently guided by feedback. You can see in figure 1.1 the two levels of feedback we are dealing with.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The first level is at the internal or personal level where we repeatedly complete personal iterations of work followed by testing and self-review. This is our tightest feedback loop and it directly influences the moment-to-moment direction of software development during our working day. The internal feedback loop operates at a fast pace, giving fast results that quickly feed back and influence the direction of our work.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The second level of feedback is at the external level, what you might think of as team-based feedback. This is where we submit our work for evaluation and review to our manager, colleagues and ultimately to our customer. The external level of feedback is necessary but it is much slower-paced.</p>
+            
+            <figure class="my-10">
+                <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
+                    <img src="./assets/1-1-levels-of-feedback.png" alt="Figure 1.1: The two levels of feedback" class="w-full" >
+                </div>
+                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.1: The two levels of feedback and where they fit with the personal work iteration</figcaption>
+            </figure>
+
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">An important point I’d like to make is that if you are waiting for external feedback to know where to head next or to know how to improve, you will necessarily be moving at a slow pace due to the nature of this kind of feedback.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In this book we will focus on what I believe is the often overlooked potential for internal feedback loops to quickly and reliably improve our development workflow, help us deliver more valuable and more reliable software and ultimately, I hope, have more satisfaction in the work we are doing and the result we are delivering.</p>
+
+            <h1 id="1-5-principles" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.5 Principles of effective development</h1>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We can’t have a good development process without a good foundation. These are the principles on which we will build our development process:</p>
+            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
+                <li>Minimizing time to feedback</li>
                 <li>Balancing value against cost</li>
                 <li>Minimizing wasted time</li>
             </ul>
 
-            <h2 id="1-7-1-rapid-pace" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.7.1 Creating a rapid pace</h2>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We must create a streamlined process for creating and testing our code. Our process should consist of techniques, tools and practices that support, empower and scale us. Elements of our process that slow us down should be jettisoned.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We aim to deliver working code at a fast pace in regular intervals, but we also need to make sure our process is sustainable. If we burn out, that’s a huge derailment of our productivity. We need a routine that includes down time so that we can include periods of rest and be able to maintain a rapid pace indefinitely.</p>
+            <h2 id="1-5-1-feedback-time" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.5.1 Minimizing time to feedback</h2>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We must create a streamlined process for creating and testing our code. The faster we can see our code working the sooner we can test it from the point of view of the customer. Prioritizing fast feedback is the most reliable way to create a development process that can operate at a rapid pace.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We must look at our process with a critical eye. Our process should consist of techniques, tools and practices that support, empower and scale us. Elements of our process that slow us down or reduce our capacity should be jettisoned.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We aim to deliver working code at a fast pace in regular intervals, but we also need to make sure our process is sustainable. We need a routine that includes periods of rest so that we can maintain a rapid pace indefinitely.</p>
 
-            <h2 id="1-7-2-value-vs-cost" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.7.2 Balancing value vs cost</h2>
+            <figure class="my-10">
+                <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
+                    <img src="./assets/1_2-minimize-distance-to-feedback.png" alt="Figure 1.2: Minimizing the distance to feedback" class="w-full" >
+                </div>
+                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.2: Minimizing the distance to getting feedback makes for a fast paced development cycle</figcaption>
+            </figure>
+
+            <h2 id="1-5-2-value-vs-cost" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.5.2 Balancing value vs cost</h2>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">As a developer we aim to deliver a flow of useful code for our employer, our organization or our customer.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We should prioritize our work based on its value. This helps to ensure that we are always working on the most valuable code that we could be working on <em>right now</em>.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We should prioritize our work based on its value to our customers or users of our software. By value I simply mean solutions to problems for which other people or businesses are willing to pay and thus keep our business alive.</p>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">But it’s not just the value of the code we need to consider, we must also balance the value of the code against the cost to build it.</p>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We should prioritize our work not just by how much it is worth, but also by how much we <em>estimate</em> it will cost to build. So code that is slightly valuable and takes a day to deliver can be a higher priority than code that is extremely valuable and takes a month to deliver.</p>
             
             <figure class="my-10">
                 <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
-                    <img src="./assets/1_1-balance-value.png" alt="Figure 1.1: The trade off between value and cost" class="w-full"/>
+                    <img src="./assets/1_1-balance-value.png" alt="Figure 1.3: The trade off between value and cost" class="w-full"/>
                 </div>
-                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.1: The trade off between value and cost</figcaption>
+                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.3: The trade off between value and cost</figcaption>
             </figure>
 
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Development is a balancing act that requires not only thinking about how to code something, we must also understand the value of our code and how it fits into our team, our company and our product.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">One big problem is that sometimes we don’t know how much something costs to build until we are building it. So we need a process that allows us to continuously re-estimate, re-evaluate and reprioritize our work.</p>
 
-            <h2 id="1-7-3-minimizing-waste" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.7.3 Minimizing wasted time</h2>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Software developers are masters of wasting time. Of course, we don’t do it on purpose, but the nature of the game is that there are an infinite variety of distractions vying to derail our productivity and we spend too much time on things that aren’t very important.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">You have probably experienced some of these yourself:</p>
-            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
-                <li>We automate things that don’t need to be automated;</li>
-                <li>We adopt tools and processes that slow us down;</li>
-                <li>We regularly create bugs that take a lot of time to find and fix;</li>
-                <li>We waste time on code and features that ultimately will be used infrequently and sometimes not at all;</li>
-                <li>And finally; we often burn time trying to get that last ounce of unnecessary perfection from our code.</li>
-            </ul>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">To adopt the rapid developer mindset, we must start with some honesty. Before we can reduce or eliminate the things that slow us down, we need to recognize and identify them. We should train ourselves to be wary of any task that consumes time, but is not necessary.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Removing wasted time from our development process is fundamental to our performance as a developer.</p>
+            <h2 id="1-5-3-waste" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.5.3 Minimizing wasted time</h2>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Software developers are masters of wasting time. At least that’s what I’ve noticed from my own career, through increasing experience I turned an increasingly critical eye to the way I manage my work.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Of course, we don’t waste time on purpose, but the nature of the game is that there are an infinite variety of distractions vying to derail our productivity and we spend too much time on things that aren’t very important.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">You have probably experienced some of these yourself: automating things that don’t need to be automated; adopting tools and processes that slow us down; regularly creating bugs that take a lot of time to find and fix; wasting time on code and features that ultimately will be used infrequently; and often burning time trying to get unnecessary perfection from our code.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">To open ourselves to a more effective process, we should start with some honesty. Before we can reduce or eliminate the things that slow us down, we need to recognize and identify them. Once identified, waste should be ruthlessly eliminated from our development process.</p>
 
-            <h1 id="1-8-philosophy" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.8 A philosophy for rapid development</h1>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">To create a development process for rapid development, we first need a guiding philosophy. Here is the philosophy that we’ll embrace in this book:</p>
+            <h1 id="1-6-philosophy" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.6 A philosophy for effective development</h1>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">To create an effective development process, we need a guiding philosophy. Through this philosophy we’ll implement our development process:</p>
             <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
-                <li>Nothing gets created all at once</li>
+                <li>Build software through iterations</li>
                 <li>Embed thinking in your process</li>
                 <li>Keep your code working</li>
                 <li>Manage complexity, avoid complications</li>
                 <li>Know when to cut corners</li>
+                <li>Actively seek feedback</li>
             </ul>
 
-            <h2 id="1-8-1-iterations" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.8.1 Nothing gets created all at once</h2>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Did you ever have the experience where you were coding for hours (or longer) and then when it came to testing your code you found that it just doesn’t work.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Or even worse: it did (kind of) work, except it had a bunch of hidden bugs that were then, rather embarrassingly, found by your users.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Coding for a long time before testing is a terrible idea. The reality is that software doesn’t get created like that. A simple truth of software development is that <em>nothing gets created all at once</em>. Successful development is usually done through a series of increments, assembling the product piece-by-piece through an iterative and evolutionary process.</p>
+            <h2 id="1-6-1-iterations" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.6.1 Build software through iterations</h2>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">A simple truth of software development is that <em>nothing gets created all at once</em>. Successful development is usually done through a series of increments, assembling the product piece-by-piece through an iterative and evolutionary process, getting feedback at each and every stage.</p>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
                 <h6 class="font-bold text-lg mb-2">Software development is done through iterations.</h6>
             </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">By iterations I mean that we take a big complex task (like building a software product) and we break it down into smaller and more easily managed pieces. This <em>divide and conquer</em> approach to development makes the whole job more attainable because we can see the milestones along the path. It also means we can test our code bit by bit instead of doing <em>big bang</em> testing at the end (that usually doesn’t work out so well).</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Iterations help us to set a rapid pace. They are the beating drum that keeps us rolling forward. It’s how we make incremental progress toward a larger goal.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">By the way, the iterations I’m talking about here could be personal work iterations or they could be team-based iterations, aka Sprints. In this book we are mostly talking about coding at the individual level, but most of this also applies at the team level. The important point is that any big task should be tackled through a series of iterations.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">By iterations I mean that we take a big complex task and we break it down into smaller and more easily managed pieces. This <em>divide and conquer</em> approach makes the whole job more attainable because we can see the milestones along the path. It also means we can test our code and get feedback bit by bit instead of doing <em>big bang</em> testing at the end.</p>
             
             <figure class="my-10">
                 <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
-                    <img src="./assets/1_2-iterations.png" alt="Figure 1.2: Iterations are crucial to software development" class="w-full" >
+                    <img src="./assets/1_2-iterations.png" alt="Figure 1.4: Iterations provide many opportunities to get feedback" class="w-full" >
                 </div>
-                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.2: Iterations are crucial to software development</figcaption>
+                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.4: Iterations provide many opportunities to get feedback and reassess</figcaption>
             </figure>
 
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
                 <h5 class="font-bold text-xl mb-2">HOW IT HELPS</h5>
-                <h6 class="font-bold text-lg mb-2">Breaking up complex work into small pieces allows regular incremental progress towards completion.</h6>
+                <h6 class="font-bold text-lg mb-2">Breaking up complex work into small pieces allows regular incremental progress towards completion and provides many opportunities for feedback.</h6>
             </blockquote>
 
-            <h2 id="1-8-2-thinking" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.8.2 Embed thinking in your process</h2>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Diving into coding before thinking is often a big mistake. Even though you probably know this already, it is still tempting to get straight into coding without doing any planning.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">This <em>code first, think later</em> way of working is prone to errors. The challenge we face is finding ways to break this cycle and intersperse thinking and planning in between sessions of coding.</p>
+            <h2 id="1-6-2-thinking" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.6.2 Embed thinking in your process</h2>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Diving into coding before thinking is often a big mistake. This <em>code first, think later</em> way of working is prone to errors. Diving into coding without thinking often means we’ll spend time working on the wrong problem, chasing down the wrong bug or building a solution the wrong way.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Thinking through what we want to achieve, what to do next and how to do it - this is a kind of self-reflective feedback that helps us build a more effective process.</p>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
-                <h6 class="font-bold text-lg mb-2">Put regular sessions of thinking between bursts of coding.</h6>
+                <h6 class="font-bold text-lg mb-2">Put regular breaks for thinking, reflection and ongoing planning between bursts of coding.</h6>
             </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Thinking is important, because it helps us determine when we are moving in the wrong direction and wasting our time. Iterations give us natural gaps in which we can review and plan our work and continuously reassess if we are still heading in the right direction.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">I like to use the Pomodoro Technique for this. As illustrated in Figure 1.3 it gives us a cycle of personal work iterations that are each 25 minutes long and have breaks between them. The start of each Pomodoro is a natural time to rethink what we are doing.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We don’t always want or need to be moving at a breakneck speed. It’s important that we have times when we can slow down when necessary and think about what we are doing.</p>
-            <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
-                <h6 class="font-bold text-lg mb-2">Pomodoro is the Italian word for tomato and the Pomodoro Technique is named after the ubiquitous tomato shaped kitchen timer.</h6>
-            </blockquote>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It doesn’t really matter what technique we use as long as it gives us time for a block of intense work followed by a break. For my own personal work iterations I like to use the Pomodoro Technique. As illustrated in Figure 1.5 it gives us a cycle of iterations that are each 25 minutes long and have short breaks between them.</p>
             
             <figure class="my-10">
                 <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
-                    <img src="./assets/1_3-pomodoros.png" alt="Figure 1.3: The Pomodoro technique provides spaces for thinking and rest" class="w-full" >
+                    <img src="./assets/1_3-pomodoros.png" alt="Figure 1.5: The Pomodoro technique provides spaces for thinking and rest" class="w-full" >
                 </div>
-                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.3: The Pomodoro technique provides spaces for thinking and rest</figcaption>
+                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.5: The Pomodoro technique provides spaces for thinking and rest</figcaption>
             </figure>
             
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Having thinking and rest embedded in our process gives us the best chance of making the best decisions whilst maintaining rapid bursts of coding activity.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Regular breaks make our process sustainable, giving us the energy we need to make it through our working day.</p>
-            <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
-                <h6 class="font-bold text-lg mb-2">If you dislike 25 minute iterations, change to another amount you feel more comfortable with.</h6>
-            </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Frequent re-evaluation supported by iterations allows us to be more dynamic and able to quickly change direction the moment we see a better option. This is especially useful, because sometimes clarity only appears when we are part way through a coding task. There may come a point where you re-estimate the current task to be more difficult than originally estimated, subsequently de-prioritizing it in favor of other tasks that are now higher priority because they are easier to deliver.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Frequent re-evaluation supported by iterations allows us to be more dynamic and able to quickly change direction the moment we see a better option. This is especially useful, because sometimes clarity only appears when we are part way through a coding task.</p>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
                 <h5 class="font-bold text-xl mb-2">HOW IT HELPS</h5>
-                <h6 class="font-bold text-lg mb-2">Thinking while working keeps you heading in the right direction.</h6>
-                <h6 class="font-bold text-lg mb-2">This helps avoid wasted time spent moving in the wrong direction.</h6>
+                <h6 class="font-bold text-lg mb-2">Thinking while working keeps you heading in the best direction and avoids wasted time spent moving in the wrong direction.</h6>
             </blockquote>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
                 <h5 class="font-bold text-xl mb-2">LEARN MORE</h5>
                 <h6 class="font-bold text-lg mb-2">Search for “Pomodoro Technique” and “Timeboxing”.</h6>
             </blockquote>
 
-            <h2 id="1-8-3-working-code" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.8.3 Keep your code working</h2>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Many developers spend much of their time debugging broken or badly behaving code. To some extent debugging is necessary, but there are many times when the problems that require debugging can be avoided.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">This boils down to what is essentially my most sacred rule of software development: <em>Keep your code working</em>.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">This is so important and so fundamental for me, that I sometimes think everyone should already know it, yet I still see other developers working on changes or refactoring without so much as a hint of testing. Why are they surprised to later find that their code doesn’t work?</p>
-            <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
-                <h6 class="font-bold text-lg mb-2">Don’t tolerate broken code.</h6>
-            </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Figure 1.4 shows efficient development in action. While working on new or updated features we take our code through a series of changes. The key milestone at each point is that we have working code. Development is taking our code through a succession of changes repeatedly going from working state to working state.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We do not tolerate broken code, whenever it is detected, we fix it and immediately return our code to a working state.</p>
+            <div class="bg-gray-100 p-8 rounded-lg mb-8">
+                <h3 class="font-serif text-2xl text-charcoal mb-4">Flow state</h3>
+                <p class="text-lg text-gray-600 font-light leading-relaxed mb-4">Flow is the state of being in the zone where we are fully immersed in what we are doing. While flow state can be very satisfying, it can also be dangerous if our work is heading in the wrong direction and we enter flow, it will likely be many hours before we realize the work we are doing is a waste of time.</p>
+            </div>
+
+            <h2 id="1-6-3-working-code" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.6.3 Keep your code working</h2>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Many developers spend much of their time debugging broken code. To some extent, debugging is always going to be necessary, but there are many times when it can be avoided. This boils down to my most sacred rule: <em>Keep your code working</em>.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Every commit to version control should be working code. Don’t tolerate broken code. Figure 1.6 shows efficient development in action. Development is taking our code through a succession of changes, repeatedly going from working state to working state.</p>
             
             <figure class="my-10">
                 <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
-                    <img src="./assets/1_4-working-state-to-working-state.png" alt="Figure 1.4: Efficient development in action" class="w-full" >
+                    <img src="./assets/1_4-working-state-to-working-state.png" alt="Figure 1.6: Efficient development in action" class="w-full" >
                 </div>
-                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.4: The process of development is taking your code through a series of changes from working state to working state</figcaption>
+                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.6: The process of development is taking your code through a series of changes from working state to working state</figcaption>
             </figure>
 
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">You have to understand that the natural state of code is actually a state of being broken. It’s almost impossible for anyone to write correct code without testing it. That’s because there’s so many more ways for code to be in a broken state than there are for it to accidentally be in a working state. We must cause code to be in a working state on purpose. In fact, it takes continuous effort and discipline to maintain our code in a working state.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It’s almost impossible for anyone to write working code without testing it. We must therefore cause code to be in a working state on purpose. It takes continuous effort and discipline to maintain our code in a working state.</p>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
-                <h6 class="font-bold text-lg mb-2">The natural state of code is to be broken.</h6>
+                <h6 class="font-bold text-lg mb-2">The natural state of code is to be broken - only testing (feedback) can show that our code is working.</h6>
             </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">That’s not to say that code breaks by itself. If code works and you don’t touch it, then it isn't just going to break by itself. It’s only when adding new code or editing existing code that we risk breaking it. It also doesn’t mean that code that seems to work now won’t be found to be broken in the future. Any code can have latent issues waiting to be discovered.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">One key to creating working code is getting <em>fast</em> <em>feedback</em>. The faster we can go from making a code change, however small, to seeing it work (or not work) the more quickly we can develop working code. Through this book, especially in chapters 2, 3 and 4, we’ll create a development pipeline with almost immediate feedback, we’ll also cover many practical ways to avoid broken code.</p>
-            <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
-                <h5 class="font-bold text-xl mb-2">HOW IT HELPS</h5>
-                <h6 class="font-bold text-lg mb-2">Keep your code working at all times and avoid wasted time spent on unnecessary debugging.</h6>
-            </blockquote>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The key to quickly creating working code is to work in short iterations, getting fast feedback and fixing broken code immediately. Through this book we’ll create a development pipeline with almost immediate feedback.</p>
 
-            <h2 id="1-8-4-complexity" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.8.4 Manage complexity, avoid complication</h2>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Have you ever felt overwhelmed by the complexity of your codebase? Or maybe that it has grown so complicated that it's out of control. Did you know that there is a difference between complexity and complication?</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The inescapable destiny of modern software development is complexity.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Applications are getting bigger; business requirements are growing and customers are more demanding. The knock-on effect is that our software products are becoming ever more complex.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Our products have an increasing number of moving parts with exponentially growing interactions: that’s the nature of complexity. As developers we must find ways of dealing with complexity to stop it bringing our pace of development to a crawl.</p>
+            <h2 id="1-6-4-complexity" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.6.4 Manage complexity, avoid complication</h2>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The inescapable destiny of modern software development is complexity. Our products have an increasing number of moving parts: that’s the nature of complexity. As developers we must find ways of dealing with complexity before it can bring our pace of development to a crawl.</p>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
                 <h6 class="font-bold text-lg mb-2">Complexity can’t be avoided, but we can manage it through our tools, techniques and process.</h6>
             </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Fortunately, we have many ways to tackle complexity while coding, including:</p>
-            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
-                <li>Creating abstractions;</li>
-                <li>Componentizing our code;</li>
-                <li>Using common conventions, patterns and terminology; and</li>
-                <li>Employing tools and processes to help us scale our development process.</li>
-            </ul>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Talking about complication on the other hand, it is quite different from complexity. While complexity is a fact of life, complications are usually unnecessary, but they also conspire to slow us down.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">A truth that can be difficult to see is that we <em>can</em> create complex products (products with many interacting parts) that are built from simple, not complicated, parts. Building complex products from simple parts is an ongoing theme in this book.</p>
-            <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
-                <h6 class="font-bold text-lg mb-2">Strive for simplicity while coding: prefer simple code and solutions over complicated ones.</h6>
-                <h6 class="font-bold text-lg mb-2">Avoid complicated tools, techniques and processes.</h6>
-            </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">There are many benefits to writing simple code. To start, it is easier to understand. This is great when other people (or maybe your future self) have to work with your code. But the most substantial benefit of simple code is that simple code is easy to test, and code that is easy to test is easier to <em>keep working</em>.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">One way that code gets complicated is through <em>optimization</em>. So don’t be too quick to optimize your code. Personally, I aim for good performance code, the best that I can achieve quickly anyway, but only when it doesn’t sacrifice simplicity. There’s a good reason Donald Knuth said that <em>premature optimization is the root of all evil</em>. Unecessary optimizations, those that can't be justified or measured, waste our time and complicate our code for no good reason.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Another way that code gets complicated is by <em>over engineering</em>, also known as <em>future proofing</em> your code. Experienced developers recognize when they are doing this, because so often in the past they have overly-complicated their code making it flexible enough to handle situations they later realized would never happen.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It’s very liberating to understand that you should be coding for <em>now</em> and not so much for <em>later</em>, but like anything in software development it’s a balancing act that relies on our judgment and our experience (and sometimes a bit of luck, because we won’t always get it right!).</p>
-            <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
-                <h6 class="font-bold text-lg mb-2">The natural state of code is to be overly complicated.</h6>
-            </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It’s important to note that writing simple code isn’t exactly easy. By default, our code seems to come out complicated and convoluted. It can take substantial effort (it gets easier with practice though) to write our code to be as simple as it can be, but still do the job it needs to do.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Throughout this book we’ll talk about ways to actively manage complexity. We’ll see how to write simpler, less complicated, code. We’ll learn how to let good design emerge naturally through continuous refactoring supported by good testing.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Complication, on the other hand, is quite different. While complexity is a fact of life, complications are usually unnecessary. Strive for simplicity while coding: prefer simple code and solutions over complicated ones. Avoid complicated tools, techniques and processes.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Simple code is easier to understand and, most importantly, easier to test. And code that is easy to test is easier to <em>keep working</em>.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Another way code gets complicated is by <em>over engineering</em> or <em>future proofing</em>. It’s very liberating to understand that you should be coding for <em>now</em> and not so much for <em>later</em>.</p>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
                 <h5 class="font-bold text-xl mb-2">HOW IT HELPS</h5>
-                <h6 class="font-bold text-lg mb-2">Avoid time sunk on complex and complicated code.</h6>
-                <h6 class="font-bold text-lg mb-2">Complexity can be managed. Complications should be avoided.</h6>
+                <h6 class="font-bold text-lg mb-2">Avoid time wasted on unnecessarily complex and complicated code. Complexity can be managed. Complications should be avoided.</h6>
             </blockquote>
 
-            <h2 id="1-8-5-cut-corners" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.8.5 Know when to cut corners</h2>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Getting to a solution quickly, artfully avoiding wrong turns and dead ends, is tricky to get right, but if you understand where shortcuts are ok, you can create a much quicker route to the finish line.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">I’m talking about things like this:</p>
-            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
-                <li>Does your code really need to be perfect? (Who even gets to decide what perfect means?) <em>Ok and useful</em> is preferable to <em>almost perfect and not yet published</em>.</li>
-                <li>Do you need automated testing? Often startups can’t afford this level of investment in their code. (We’ll talk about the tradeoffs of automated testing in Chapter 5).</li>
-                <li>Can you circumvent your company's usual traditions, process and conventions to demonstrate a groundbreaking new feature quickly? (Possibly in a <em>testbed</em> application, which we’ll see in Chapter 4).</li>
-            </ul>
+            <h2 id="1-6-5-cut-corners" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.6.5 Know when to cut corners</h2>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Getting to a solution quickly is tricky, but if you understand where shortcuts are ok, you can create a much quicker route to the finish line.</p>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
                 <h6 class="font-bold text-lg mb-2">Perfection is the enemy of productivity.</h6>
             </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Learn where the acceptable boundaries are in your organization. When you know what you can and can’t get away with, you will find faster ways to deliver your code.</p>
-            <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
-                <h5 class="font-bold text-xl mb-2">HOW IT HELPS</h5>
-                <h6 class="font-bold text-lg mb-2">Understand where it’s ok to cut corners (and still keep your job).</h6>
-                <h6 class="font-bold text-lg mb-2">This gets you to the finish line faster and more directly.</h6>
-            </blockquote>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Does your code really need to be perfect? <em>Ok and useful</em> is preferable to <em>almost perfect and not yet published</em>. Learn where the acceptable boundaries are in your organization. When you know what you can and can’t get away with, you will find faster ways to deliver your code.</p>
 
-            <h1 id="1-9-the-answer" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.9 The fastest way to write code - the answer</h1>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Now the answer you’ve all been waiting for… drum roll please.</p>
+            <h2 id="1-6-6-feedback" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.6.6 Actively seek feedback</h2>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It’s not enough to just let feedback come to us. We need to purposefully construct our development process to create frequent opportunities for feedback. We can build a habit of asking questions that elicit feedback, like: <em>Do my latest code changes work as intended? Will the customer find value in this new feature?</em></p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Although gathering external feedback might be out of our control, there are many ways we can generate feedback within our personal development workflow that are directly under our control, including developing through small iterations, self review and test driven development.</p>
+
+            <h1 id="1-7-the-answer" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.7 The fastest way to write code - the answer</h1>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Now the answer you’ve all been waiting for… drum roll please. <em>What’s the fastest way to write code?</em></p>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
-                <h6 class="font-bold text-lg mb-2">What’s the fastest way to write code?</h6>
+                <h6 class="font-bold text-lg mb-2">It’s simple. Just don't write the code!</h6>
             </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It’s simple. Just don't write the code!</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">That sounds crazy I know, but if we could use a crystal ball to figure out which of our code is destined for the trash heap, we could simply not write that code in the first place and save ourselves a lot of time.</p>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The fastest code we can write is the code that we preemptively eliminate because we realize early that we don’t even need it. A sad fact of software development is that so much of the code we write is destined to go unused.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The main problem is that code is expensive. Code is costly to create. Code is costly to maintain. Code creates baggage that we must bear going into the future.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Here’s a less crazy way to look at it:</p>
-            <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
-                <h6 class="font-bold text-lg mb-2">Choose carefully the code that you decide to write.</h6>
-            </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Be cautious where you invest your time! Decide to write code with the most obvious value and be wary of coding something with an unknown value.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">I asked this question, <em>what’s the fastest way to write code</em>, because I hope it made you think and because it highlights something important about prioritization.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Thinking about where you can deliver the most value, thinking about the best place to invest your time - these are the kinds of thoughts that put you on track to more effective software development.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The main problem is that code is expensive to create and maintain. Code creates baggage that we must bear going into the future. Choose carefully the code that you decide to write. Be cautious where you invest your time! Decide to write code with the most obvious value and be wary of coding something with an unknown value.</p>
 
-            <h1 id="1-10-summary" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.10 Rapid development</h1>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We’ve talked through the goals and philosophy of rapid development. Before we move on, here’s a quick summary.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Rapid development is not just about coding quickly, we also need to produce code that is working, reliable and valuable.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We achieve rapid development by:</p>
+            <h1 id="1-8-recap" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.8 Philosophy recap</h1>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Effective software development is about producing code that is <em>working</em>, <em>reliable</em> and <em>valuable</em>. To achieve our goals we’ll create a development process guided by this philosophy:</p>
             <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
-                <li>Creating a rapid pace;</li>
-                <li>Balancing the value of code against the cost to build it; and</li>
-                <li>Minimizing the time we are wasting</li>
+                <li>Develop software through iterations.</li>
+                <li>Embed thinking in your process.</li>
+                <li>Keep our code working.</li>
+                <li>Manage complexity, avoid complications.</li>
+                <li>Keep our code simple.</li>
+                <li>Know when to cut corners.</li>
+                <li>Actively seek feedback.</li>
             </ul>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Our philosophy of rapid development:</p>
-            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
-                <li>Build software through iterations, including time for rest and thinking</li>
-                <li>Keep your code working</li>
-                <li>Manage complexity, avoid complications</li>
-                <li>Know when to cut corners</li>
-            </ul>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Through this book we'll create a development process that implements our philosophy of rapid development and makes it a reality.</p>
 
-            <h1 id="1-11-example-app" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.11 The example app: <em>Photosphere</em></h1>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">While this first chapter has been theoretical, the rest of the book is mostly practical, with some theory interspersed. Here’s a taste of what’s coming up.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">You can follow along with the coding and together we’ll build a fullstack application while applying the philosophy of rapid development. There’ll be plenty of simple examples, but we are also working towards a non-trivial example application called <em>Photosphere</em>. You can see how it will eventually look in figure 1.5. A live demo is available here: <a href="https://photosphere-100k.codecapers.com.au/" class="text-boutique-gold hover:underline">https://photosphere-100k.codecapers.com.au/</a></p>
+            <h1 id="1-9-ai" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.9 Can’t AI just do it all for me?</h1>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Unfortunately, quite often the code produced by AIs is simply broken. They have no notion of what it means to write <em>working code</em> and they certainly don’t have the ability to test the code that they write for us. So we are left to test and fix the broken code that AIs create for us.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">At this present point, the ability to create working and reliable code is still a necessary skill for developers. Not to mention the debugging skills we need to identify and fix problems in the code the AI has given us.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">AIs also aren’t going to be able to identify the <em>value</em> in what we do. We simply shouldn’t want an AI to take responsibility for what’s important to us, our team mates, our businesses and our customers. That is the kind of thing that we should decide.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">So what’s changed with AI? Honestly not a lot. My work seems to move more quickly now that I’m not manually running around on the internet doing research. My trusty AI does a lot of that for me now. But they don’t change the fundamental skills that we as humans need to produce code that is working, reliable and valuable. Indeed, building working feedback loops and getting fast feedback is just as important as ever.</p>
+
+            <h1 id="1-10-photosphere" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.10 The example app: <em>Photosphere</em></h1>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">While this first chapter has been theoretical, the rest of the book is mostly practical. You can follow along with the coding and together we’ll build a fullstack application while applying the philosophy of rapid development. There’ll be plenty of simple examples, but we are also working towards a non-trivial example application called <em>Photosphere</em>.</p>
             
             <figure class="my-10">
                 <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
                     <img src="./assets/photosphere.png" alt="Photosphere screenshot" class="w-full">
                 </div>
-                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.5: What the Photosphere frontend will look like later in the book</figcaption>
+                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.7: What the Photosphere frontend will look like later in the book</figcaption>
             </figure>
 
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Photosphere is a photo gallery and backup tool. Initially we’ll be able to upload photos through a web portal and then browse them in the gallery. Toward the end of the book, we’ll exploring building desktop and mobile applications from a shared codebase.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Through building Photosphere we’ll learn the techniques, habits and attitude we need to create a fast pace of development.</p>
 
-            <h1 id="1-12-overview" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.12 Book overview</h1>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Chapter 1 has laid the theoretical groundwork for rapid development. In the coming chapters we’ll implement our philosophy, create our development process and actually build the Photosphere application.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In chapters 2 and 3 we create a simple monolithic version of Photosphere as shown in figure 1.6. We’ll use this as a vehicle through which to explain the foundations of an effective development process.</p>
+            <h1 id="1-11-overview" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.11 Book overview</h1>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In the coming chapters we’ll implement our philosophy, create our development process and actually build the Photosphere application.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In chapters 2 and 3 we create a simple monolithic version of Photosphere as shown in figure 1.8. We’ll use this as a vehicle through which to explain the foundations of an effective development process.</p>
             
             <figure class="my-10">
                 <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
                     <img src="./assets/1-6-photosphere-monolithic.png" alt="Monolithic Photosphere screenshot" class="w-full">
                 </div>
-                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.6: The Photosphere example application: the simple monolithic version</figcaption>
+                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.8: The Photosphere example application: the simple monolithic version</figcaption>
             </figure>
 
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In chapter 4 we'll explore the planning and prototyping that led to the development of Photosphere.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In chapter 5 we'll talk about testing and look at the test driven development (TDD) that created Photosphere's gallery layout algorithm.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In chapter 6 we'll talk about how to choose the right solutions to problems through the development process.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In chapter 7 we'll learn how to be more effective at debugging and problem solving.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In chapter 8 we’ll take our first steps beyond fullstack and extend Photosphere with a desktop application implemented with Electron and a mobile application implemented with Capacitor. All frontends will share the same backend as illustrated in figure 1.7.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In Chapter 9 we'll wind up with a review, what an effective process looks like and how to scale yourself and your team.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In chapter 8 we’ll take our first steps beyond fullstack and extend Photosphere with a desktop application implemented with Electron and a mobile application implemented with Capacitor. All frontends will share the same backend as illustrated in figure 1.9.</p>
             
             <figure class="my-10">
                 <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
                     <img src="./assets/1-7-photosphere-with-multiple-frontends.png" alt="Photosphere with multiple frontends screenshot" class="w-full">
                 </div>
-                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.7: The Photosphere example application: beyond fullstack - now supporting desktop and mobile frontends</figcaption>
+                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.9: The Photosphere example application: beyond fullstack - now supporting desktop and mobile frontends</figcaption>
             </figure>
 
-            <h1 id="chapter-summary" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">Summary</h1>
+            <h1 id="1-12-summary" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">Summary</h1>
             <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
-                <li>Rapid development prioritizes code that is working, reliable and valuable.</li>
-                <li>We achieve rapid development by	+ Creating a rapid pace;	+ Balancing value against cost; and	+ Minimizing wasted time</li>
-                <li>Successfully software development is done through iterations.</li>
-                <li>Embed thinking in your process and avoid wasted time heading in the wrong direction.</li>
-                <li>The number one rule of development: <em>Keep your code working</em>.</li>
-                <li>Modern applications tend towards complexity, but complexity can be managed.</li>
-                <li>Keep your code simple, try to avoid complications.</li>
-                <li>Cut corners, but only when it’s ok to do that.</li>
+                <li>Continuous feedback is the foundation for delivering code that is working, reliable and valuable at a rapid pace.</li>
+                <li>The virtues we aspire to: <em>Working</em>, <em>Reliable</em>, and <em>Valuable</em>.</li>
+                <li>Principles of effective development: Minimizing time to feedback, balancing value against cost, and minimizing wasted time.</li>
+                <li>Our philosophy: Iterations, embedded thinking, keeping code working, managing complexity, simplicity, cutting corners when appropriate, and actively seeking feedback.</li>
+                <li>Choose carefully where to invest your capacity.</li>
+                <li>Photosphere is the application we are building to demonstrate a fast development process with continuous feedback.</li>
             </ul>
         </article>
 
@@ -509,28 +449,27 @@
                 <h3 class="font-serif text-lg text-charcoal mb-4 uppercase tracking-widest border-b border-gray-200 pb-2">Contents</h3>
                 <nav id="toc" class="space-y-1">
                     <a href="#working-and-valuable" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1 Working and Valuable</a>
-                    <a href="#gearing-your-process" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">Gearing your process</a>
                     <a href="#1-1-journey" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.1 A developer's journey</a>
-                    <a href="#1-2-who-is-this-book-for" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.2 Who is this book for?</a>
-                    <a href="#1-3-what-will-i-learn" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.3 What will I learn?</a>
-                    <a href="#1-4-prerequisites" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.4 Prerequisites</a>
-                    <a href="#1-5-fastest-way" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.5 Fastest way to code</a>
-                    <a href="#1-6-what-is-rapid-development" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.6 Rapid development?</a>
-                    <a href="#1-7-achieving-rapid-development" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.7 Achieving it</a>
-                    <a href="#1-7-1-rapid-pace" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">1.7.1 Creating pace</a>
-                    <a href="#1-7-2-value-vs-cost" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">1.7.2 Value vs Cost</a>
-                    <a href="#1-7-3-minimizing-waste" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">1.7.3 Minimizing waste</a>
-                    <a href="#1-8-philosophy" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.8 Philosophy</a>
-                    <a href="#1-8-1-iterations" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">1.8.1 Iterations</a>
-                    <a href="#1-8-2-thinking" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">1.8.2 Thinking</a>
-                    <a href="#1-8-3-working-code" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">1.8.3 Working code</a>
-                    <a href="#1-8-4-complexity" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">1.8.4 Complexity</a>
-                    <a href="#1-8-5-cut-corners" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">1.8.5 Cut corners</a>
-                    <a href="#1-9-the-answer" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.9 The Answer</a>
-                    <a href="#1-10-summary" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.10 Rapid dev</a>
-                    <a href="#1-11-example-app" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.11 Photosphere</a>
-                    <a href="#1-12-overview" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.12 Overview</a>
-                    <a href="#chapter-summary" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">Summary</a>
+                    <a href="#1-2-fastest-way" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.2 Fastest way to code</a>
+                    <a href="#1-3-virtues" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.3 Virtues of development</a>
+                    <a href="#1-4-feedback-driven" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.4 Feedback-driven dev</a>
+                    <a href="#1-5-principles" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.5 Principles</a>
+                    <a href="#1-5-1-feedback-time" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">1.5.1 Time to feedback</a>
+                    <a href="#1-5-2-value-vs-cost" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">1.5.2 Value vs Cost</a>
+                    <a href="#1-5-3-waste" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">1.5.3 Minimizing waste</a>
+                    <a href="#1-6-philosophy" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.6 Philosophy</a>
+                    <a href="#1-6-1-iterations" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">1.6.1 Iterations</a>
+                    <a href="#1-6-2-thinking" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">1.6.2 Thinking</a>
+                    <a href="#1-6-3-working-code" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">1.6.3 Working code</a>
+                    <a href="#1-6-4-complexity" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">1.6.4 Complexity</a>
+                    <a href="#1-6-5-cut-corners" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">1.6.5 Cut corners</a>
+                    <a href="#1-6-6-feedback" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-6 border-l-2 border-transparent">1.6.6 Seek feedback</a>
+                    <a href="#1-7-the-answer" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.7 The Answer</a>
+                    <a href="#1-8-recap" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.8 Recap</a>
+                    <a href="#1-9-ai" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.9 Can AI do it?</a>
+                    <a href="#1-10-photosphere" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.10 Photosphere</a>
+                    <a href="#1-11-overview" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">1.11 Overview</a>
+                    <a href="#1-12-summary" class="toc-link block text-sm text-gray-500 hover:text-boutique-gold transition-colors py-1 pl-2 border-l-2 border-transparent">Summary</a>
                 </nav>
             </div>
         </aside>
