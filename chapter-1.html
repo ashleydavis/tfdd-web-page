@@ -144,7 +144,7 @@
             <h1 id="working-and-valuable" class="font-serif text-5xl md:text-6xl text-charcoal mb-8 leading-tight">1 Working <span class="italic text-gray-500">and</span> valuable</h1>
             
             <h2 class="font-serif text-3xl text-charcoal mb-6 mt-12">Gearing your process for continuous feedback</h2>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In this chapter, you will learn:</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6"><em><strong>In this chapter, you will learn</strong></em></p>
             <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
                 <li>A philosophy for effective software development</li>
                 <li>Why feedback matters when building software</li>
@@ -152,12 +152,12 @@
             </ul>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">This is a book about delivering software at a rapid pace. But it isn’t just about being a fast coder. By itself being able to write code quickly is not a worthy goal. It’s not even a useful goal.</p>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
-                <h6 class="font-bold text-lg mb-2">As a <em>software developer</em> you must be able to produce code that is <em>working</em>, <em>reliable</em> and <em>valuable</em> in a reasonable time frame.</h6>
+                <h6 class="font-bold text-lg mb-2">As a software developer you must be able to produce code that is working, reliable and valuable in a reasonable time frame.</h6>
             </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">If you can't write code that works, or if you can't write code that's valuable, there's little point being able to write code quickly. The real trick to moving at a rapid pace is to focus on the aspects of development that help you build your code the <em>right</em> way and indeed to make sure that it is the <em>right</em> code.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">When we create <em>broken</em> code (it’s so easy to do) we stifle our future progress.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">When we create <em>unreliable</em> code (again so easy), for example code that only runs on our computer but doesn’t work in production or doesn’t work on our customers’ devices, that’s code that by definition isn’t going to be useful.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">When we travel far writing code in the <em>wrong</em> direction, the work we have done is ultimately wasted (which so often happens).</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">If you can't write code that works, or if you can't write code that's valuable, there's little point being able to write code quickly. The real trick to moving at a rapid pace is to focus on the aspects of development that help you build your code the right way and indeed to make sure that it is the right code.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">When we create broken code (it’s so easy to do) we stifle our future progress.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">When we create unreliable code (again so easy), for example code that only runs on our computer but doesn’t work in production or doesn’t work on our customers’ devices, that’s code that by definition isn’t going to be useful.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">When we travel far writing code in the wrong direction, the work we have done is ultimately wasted (which so often happens).</p>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">How do we deliver code that is working, reliable and valuable as quickly as possible? You might have guessed already that the main answer is feedback. We need fast, almost immediate feedback, and we need it continuously through our development process. This book will help you build an effective development process to create working and valuable code, quickly. But we can't do that without building a solid foundation for fast and continuous feedback. In this chapter we start with a theoretical philosophy for software development based on continuous feedback, before spending multiple chapters learning how to put the theory into practice.</p>
 
             <h1 id="1-1-journey" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.1 A software developer’s journey</h1>
@@ -166,7 +166,8 @@
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We each learn in our own unique way and there is simply no <em>one size fits all</em> solution. Software development is too complicated for that and relies too much on situation, context, judgment and experience. There are many different ways to approach it that can work. There are many different ways to do it, some of which work for some teams but not for others. The thing that makes <em>you</em> a good software developer might very well be different to the thing that works for someone else. So please keep an open mind as you read this book. I’m certain many of the techniques herein will work for you, but there are sure to be some that don’t resonate and some that you will need to adapt to your own personal style.</p>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">One thing I know for sure is that goals alone aren’t enough to achieve anything. Goals can’t be fulfilled without having the habits to back them up. Your habits will define you. Create good habits and you will become a consistently good developer. Create bad habits and … well, you get the idea.</p>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">You already have the goal of improving yourself as a developer, but you still need some help creating the habits that push you toward that goal. Through this book you will learn principles, practices and techniques that will help you achieve your goals of delivering better and more useful software more quickly. We’ll be building these habits from chapter 2 where we’ll be working through this book's example of feedback-driven development.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">This book is for working developers who already know the basics of a programming language and are looking for pathways to a higher level of skill. To get the most of this book you should be able to:</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">This book is for working developers who already know the basics of a programming language and are looking for pathways to a higher level of skill.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">To get the most of this book you should be able to:</p>
             <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
                 <li>Get the gist of simple JavaScript or TypeScript code examples</li>
                 <li>Use the command line to create and change directories, run commands, etc.</li>
@@ -214,13 +215,19 @@
                 <li>How do we know if our code is valuable and reliable? We should test it in production. We should test it on our customer device. Ultimately we should check in with our customer and ask them how it’s doing. Or better yet, watch our customers using our product. Again that’s feedback.</li>
                 <li>How do we know our development process is effective at producing working, reliable and valuable code? We should assess this continuously during development. Yet more feedback.</li>
             </ul>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Many times in this book I will mention <em>our customer</em>. I believe that a <em>customer-focused</em> approach to software development is one of the best ways to ensure that we are committed to building the right thing in the right way - whatever that happens to mean for our given business, project, team or customer. For many of you reading this, <em>customer</em> will sound like the wrong term to use. So please mentally swap <em>customer</em> with whatever term you feel is the most appropriate proxy for you (e.g. boss, lead developer, product manager, colleagues, or end-user).</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Many times in this book I will mention <em>our customer</em>. I believe that a <em>customer-focused</em> approach to software development is one of the best ways to ensure that we are committed to building the right thing in the right way - whatever that happens to mean for our given business, project, team or customer.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">For many of you reading this, <em>customer</em> will sound like the wrong term to use. So please mentally swap <em>customer</em> with whatever term you feel is the most appropriate proxy for you, for example:</p>
+            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
+                <li>Your boss, lead developer, project/product manager/owner, department head - When you have no direct access to customers of your product you'll need to identify the relevant proxy to your customer.</li>
+                <li>Your colleagues or other teams - If you are a developer providing code and tools for your colleagues to use, then they are your customer!</li>
+                <li>Your end-user - sometimes your <em>customer sells</em> your software to their end-user. This situation is more difficult, but still what makes your software valuable to the end-user should generally be what makes it saleable to your customer - although it's often never this simple in real life.</li>
+            </ul>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Building good feedback loops into our development process is the best way to make constant course corrections to hone in on better code, better product and better process.</p>
 
             <h1 id="1-4-feedback-driven" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.4 Feedback-driven development</h1>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">An effective development process is one that is frequently guided by feedback. You can see in figure 1.1 the two levels of feedback we are dealing with.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The first level is at the internal or personal level where we repeatedly complete personal iterations of work followed by testing and self-review. This is our tightest feedback loop and it directly influences the moment-to-moment direction of software development during our working day. The internal feedback loop operates at a fast pace, giving fast results that quickly feed back and influence the direction of our work.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The second level of feedback is at the external level, what you might think of as team-based feedback. This is where we submit our work for evaluation and review to our manager, colleagues and ultimately to our customer. The external level of feedback is necessary but it is much slower-paced.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The first level is at the internal or personal level where we repeatedly complete personal iterations of work followed by testing and self-review: testing our code, doing thought experiments, conducting real experiments and reviewing our own code for mistakes. The insight gained from this internal feedback allows us to see our mistakes more quickly and plot a better course forward. This is our tightest feedback loop and it directly influences the moment-to-moment direction of software development during our working day. The internal feedback loop operates at a fast pace, giving fast results that quickly feed back and influence the direction of our work. Considering feedback at this level and taking corrective action has the biggest potential to reshape our personal development process to be more effective.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The second level of feedback is at the external level, what you might think of as team-based feedback. This is where we submit our work for evaluation and review to our manager, colleagues (for peer-reviews) and ultimately to our customer who will use the product and features we create. The external level of feedback is necessary but it is much slower-paced. It can take hours, if not days, to get feedback this way. If you are relying on external feedback to improve your personal development process you will find that improvements will come very slowly if they come at all.</p>
             
             <figure class="my-10">
                 <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
@@ -229,11 +236,13 @@
                 <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.1: The two levels of feedback and where they fit with the personal work iteration</figcaption>
             </figure>
 
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">An important point I’d like to make is that if you are waiting for external feedback to know where to head next or to know how to improve, you will necessarily be moving at a slow pace due to the nature of this kind of feedback.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">An important point I’d like to make is that if you are waiting for external feedback (feedback from your colleagues, manager or customers) to know where to head next or to know how to improve, you will necessarily be moving at a slow pace due to the nature of this kind of feedback.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Whilst we do need external feedback and it's an important, no crucial, part of our jobs to meet the needs of our colleagues, business and customers, by itself we can't create a fast development workflow just using external feedback. There are in fact many things we can do to test, validate, assess, review (whatever you want to call it) our own work (creating our own internal feedback) before we hand our work over to be tested, validated, assessed, reviewed (etc.) by colleague, manager or customer. We can and should create our own internal feedback for frequent self-correction and ongoing improvement.</p>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In this book we will focus on what I believe is the often overlooked potential for internal feedback loops to quickly and reliably improve our development workflow, help us deliver more valuable and more reliable software and ultimately, I hope, have more satisfaction in the work we are doing and the result we are delivering.</p>
 
             <h1 id="1-5-principles" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.5 Principles of effective development</h1>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We can’t have a good development process without a good foundation. These are the principles on which we will build our development process:</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We can’t have a good development process without a good foundation.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">These are the principles on which we will build our development process:</p>
             <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
                 <li>Minimizing time to feedback</li>
                 <li>Balancing value against cost</li>
@@ -241,9 +250,9 @@
             </ul>
 
             <h2 id="1-5-1-feedback-time" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.5.1 Minimizing time to feedback</h2>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We must create a streamlined process for creating and testing our code. The faster we can see our code working the sooner we can test it from the point of view of the customer. Prioritizing fast feedback is the most reliable way to create a development process that can operate at a rapid pace.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We must create a streamlined process for creating and testing our code and we'll see examples of this in coming chapters. The faster we can see our code working the sooner we can test it from the point of view of the customer. We must reduce the time it takes to go from adding or editing code to getting feedback. Prioritizing fast feedback is the most reliable way to create a development process that can operate at a rapid pace.</p>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We must look at our process with a critical eye. Our process should consist of techniques, tools and practices that support, empower and scale us. Elements of our process that slow us down or reduce our capacity should be jettisoned.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We aim to deliver working code at a fast pace in regular intervals, but we also need to make sure our process is sustainable. We need a routine that includes periods of rest so that we can maintain a rapid pace indefinitely.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We aim to deliver working code at a fast pace in regular intervals, but we also need to make sure our process is sustainable. If we burn out, that's a huge derailment of our productivity. We need a routine that includes periods of rest so that we can maintain a rapid pace indefinitely.</p>
 
             <figure class="my-10">
                 <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
@@ -253,10 +262,11 @@
             </figure>
 
             <h2 id="1-5-2-value-vs-cost" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.5.2 Balancing value vs cost</h2>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">As a developer we aim to deliver a flow of useful code for our employer, our organization or our customer.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We should prioritize our work based on its value to our customers or users of our software. By value I simply mean solutions to problems for which other people or businesses are willing to pay and thus keep our business alive.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">But it’s not just the value of the code we need to consider, we must also balance the value of the code against the cost to build it.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We should prioritize our work not just by how much it is worth, but also by how much we <em>estimate</em> it will cost to build. So code that is slightly valuable and takes a day to deliver can be a higher priority than code that is extremely valuable and takes a month to deliver.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">As developers we aim to deliver a flow of useful code for our employer, our organization or our customer.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We should prioritize our work based on its value to our customers or users of our software. By value I simply mean solutions to problems for which other people or businesses are willing to pay and thus keep our business alive. For bigger companies value is often defined by our managers or product owners. For those of us working for smaller companies or startups we might be lucky enough to have access to our customers and be able to directly see the value we are providing to them.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Balancing values vs cost helps to ensure that we are always working on the most valuable code that we could be working on right now. How do we know the value? We need to ask the customer, or better yet show them, and seek feedback.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">But it’s not just the value of the code we need to consider; we must also balance the value of the code against the cost to build it.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We should prioritize our work not just by how much it is worth, but also by how much we estimate it will cost to build. So code that is slightly valuable and takes a day to deliver can be a higher priority than code that is extremely valuable and takes a month to deliver.</p>
             
             <figure class="my-10">
                 <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
@@ -265,13 +275,23 @@
                 <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.3: The trade off between value and cost</figcaption>
             </figure>
 
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Development is a balancing act that requires not only thinking about how to code something, we must also understand the value of our code and how it fits into our team, our company and our product.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Development is a balancing act that requires not only thinking about how to code something, but also understanding the value of our code and how it fits into our team, our company and our product.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">By the way, this doesn't mean we should never do the work that takes longer to deliver - sometimes it just means that we need to break down the bigger work into smaller projects (each with clearly defined value) or maybe that the slower paced work should proceed alongside the faster paced work. There's no particular reason why we can't spend each morning getting quick wins and then each afternoon working on slower wins - there are many ways we can organize our time to make sure the important work gets done.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">One big problem is that we often don't know how much something costs to build until we are building it. So we need a process with spaces for feedback that allows us to continuously re-estimate, re-evaluate and reprioritize our work.</p>
 
             <h2 id="1-5-3-waste" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.5.3 Minimizing wasted time</h2>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Software developers are masters of wasting time. At least that’s what I’ve noticed from my own career, through increasing experience I turned an increasingly critical eye to the way I manage my work.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Of course, we don’t waste time on purpose, but the nature of the game is that there are an infinite variety of distractions vying to derail our productivity and we spend too much time on things that aren’t very important.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">You have probably experienced some of these yourself: automating things that don’t need to be automated; adopting tools and processes that slow us down; regularly creating bugs that take a lot of time to find and fix; wasting time on code and features that ultimately will be used infrequently; and often burning time trying to get unnecessary perfection from our code.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">To open ourselves to a more effective process, we should start with some honesty. Before we can reduce or eliminate the things that slow us down, we need to recognize and identify them. Once identified, waste should be ruthlessly eliminated from our development process.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Software developers are masters of wasting time. At least that’s what I’ve noticed from my own career, through increasing experience I turned an increasingly critical eye to the way I manage my work - if you do the same you might notice the time you are wasting.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Of course, we don’t waste time on purpose - that's not what I wanted to imply - but the nature of the game is that there are an infinite variety of distractions vying to derail our productivity and we spend too much time on things that aren’t very important.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">You have probably experienced some of these yourself:</p>
+            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
+                <li>We automate things that don’t need to be automated;</li>
+                <li>We adopt tools and processes that slow us down;</li>
+                <li>We regularly create bugs that take a lot of time to find and fix;</li>
+                <li>We waste time on code and features that ultimately will be used infrequently and sometimes not at all;</li>
+                <li>And finally, we often burn time trying to get that last ounce of unnecessary perfection from our code.</li>
+            </ul>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">To open ourselves to a more effective process, we should start with some honesty. Before we can reduce or eliminate the things that slow us down, we need to recognize and identify them. We should learn to question any task that consumes time, but is not necessary or not valuable.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Allowing space for feedback is essential to recognise wasted time. Once identified, waste should be ruthlessly eliminated from our development process. This is fundamental to our performance as a developer.</p>
 
             <h1 id="1-6-philosophy" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.6 A philosophy for effective development</h1>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">To create an effective development process, we need a guiding philosophy. Through this philosophy we’ll implement our development process:</p>
@@ -285,11 +305,16 @@
             </ul>
 
             <h2 id="1-6-1-iterations" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.6.1 Build software through iterations</h2>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">A simple truth of software development is that <em>nothing gets created all at once</em>. Successful development is usually done through a series of increments, assembling the product piece-by-piece through an iterative and evolutionary process, getting feedback at each and every stage.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Did you ever have the experience where you were coding for hours (or longer) and then when you tested your code, you found that it just didn't work?</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Or even worse: it did (kind of) work, except it had a bunch of hidden bugs that were then, rather embarrassingly, found by your users?</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Coding for a long time before testing and getting feedback is a terrible idea. The reality is that software doesn't get created like that. A simple truth of software development is that nothing gets created all at once. Successful development is usually done through a series of increments, assembling the product piece-by-piece through an iterative and evolutionary process, getting feedback at each and every stage.</p>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
                 <h6 class="font-bold text-lg mb-2">Software development is done through iterations.</h6>
             </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">By iterations I mean that we take a big complex task and we break it down into smaller and more easily managed pieces. This <em>divide and conquer</em> approach makes the whole job more attainable because we can see the milestones along the path. It also means we can test our code and get feedback bit by bit instead of doing <em>big bang</em> testing at the end.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">By iterations I mean that we take a big complex task (like building a software product) and we break it down into smaller and more easily managed pieces.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">This divide and conquer approach to development makes the whole job more attainable because we can see the milestones along the path. It also means we can test our code and get feedback bit by bit instead of doing big bang testing at the end (that usually doesn't work out so well). As we progress through development we can then continuously assess how we are doing and make course corrections as necessary.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Iterations help us to set a rapid pace. They are the beating drum that keeps us rolling forward. It's how we make incremental progress toward a larger goal.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">You may have heard of, or you may already practice agile development - that's a common example of iteration based development. But I'm not just talking about team-based agile sprints. The iterations we are talking about in this book can be personal work iterations or they can be team-based iterations. But mostly we are talking about the process of development at the individual level, even though much of this also applies at the team level. The important point is that any big task should be broken down and tackled through a series of iterations - allowing many opportunities to seek feedback.</p>
             
             <figure class="my-10">
                 <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
@@ -304,12 +329,14 @@
             </blockquote>
 
             <h2 id="1-6-2-thinking" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.6.2 Embed thinking in your process</h2>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Diving into coding before thinking is often a big mistake. This <em>code first, think later</em> way of working is prone to errors. Diving into coding without thinking often means we’ll spend time working on the wrong problem, chasing down the wrong bug or building a solution the wrong way.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Thinking through what we want to achieve, what to do next and how to do it - this is a kind of self-reflective feedback that helps us build a more effective process.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Diving into coding before thinking is often a big mistake. Even though you probably know this already, it is still tempting to get straight into coding without doing any planning. This "code first, think later" way of working is prone to errors. Diving into coding without thinking often means we’ll spend time working on the wrong problem, chasing down the wrong bug or building a solution the wrong way. If we head down the wrong path and have no way to realise it we can lose a lot of time before we discover we are heading into a dead end. The challenge we face is finding ways to break this cycle and intersperse thinking and planning in between sessions of coding.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Thinking through what we want to achieve, what to do next and how to do it, what we have just done and how well it worked - this is a kind of self-reflective feedback that helps us build a more effective process - without having to consult with anyone else.</p>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
                 <h6 class="font-bold text-lg mb-2">Put regular breaks for thinking, reflection and ongoing planning between bursts of coding.</h6>
             </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It doesn’t really matter what technique we use as long as it gives us time for a block of intense work followed by a break. For my own personal work iterations I like to use the Pomodoro Technique. As illustrated in Figure 1.5 it gives us a cycle of iterations that are each 25 minutes long and have short breaks between them.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It doesn’t really matter what technique we use to create our iterations so long as it gives us time for a block of intense work followed by a break, which is then repeated. The spaces between blocks of work give us time to think. Thinking is important, because it helps us determine when we are moving in the wrong direction and wasting our time. Iterations provide natural gaps in which we can review and plan our work and continuously reassess. We don't always want or need to be moving at a breakneck speed. It's important that we have times where we can slow down to think about what we are doing.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">You can build your process of iterations however you like and in a way that's suited to your company, your project and the stability of your requirements. If your current requirements are very stable (well understood, well estimated, unlikely to require a re-evaluation of value or delivery cost) then the duration could be as much as an entire day per personal work iteration. More likely, though, you'll at least want to break your day around lunch time, giving you two iterations. Possibly more sensible is to have at least four iterations per day, giving time for a morning and afternoon break and a lunch break.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">If you suffer from very unstable requirements (as I have, working in the games industry, various startups and various companies that were intensely customer focused) where the value of any task or feature is uncertain and the cost of delivery is also uncertain, it can be useful to reduce the size of your personal iterations to give more opportunities for thinking, gathering feedback and reassessing the plan. For my own personal work iterations I like to use the Pomodoro Technique. As illustrated in Figure 1.5 it gives us a cycle of iterations that are each 25 minutes long and have short breaks between them. The start of each Pomodoro is a natural time to rethink what we are doing. Pomodoro is the Italian word for tomato and the Pomodoro Technique is named after the ubiquitous tomato shaped kitchen timer. If you dislike 25 minute iterations, change it to what makes you comfortable (say 50 minutes work, 10 minutes break). You should create a rhythm that works for you and tailor a system of personal work iterations to fit your own needs.</p>
             
             <figure class="my-10">
                 <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
@@ -317,8 +344,17 @@
                 </div>
                 <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.5: The Pomodoro technique provides spaces for thinking and rest</figcaption>
             </figure>
-            
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Frequent re-evaluation supported by iterations allows us to be more dynamic and able to quickly change direction the moment we see a better option. This is especially useful, because sometimes clarity only appears when we are part way through a coding task.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Having thinking and rest embedded in our process gives us the best chance of making the best decisions whilst maintaining rapid bursts of coding activity. Regular breaks make our process sustainable, giving us the energy we need to make it through our working day.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">You have probably noticed yourself, when faced with a tough problem, that taking a break and going for a walk or taking a shower gives you the space (away from the problem) that you need in order to solve the problem. My suggestion: Don't just wait for the tough problems - regularly get up and walk away from the work. Sometimes the only way to see clearly is to stop actively thinking about the problem you are working on. Focusing on something else, even for just a small amount of time, can help to clear the mind so it is ready to think freshly about a problem when you come back to it.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Some have said that they can't do personal work iterations like this because it stops them achieving a flow state (see sidebar below). Whilst flow state can be very satisfying, it's not always as productive as you might think. When requirements are very stable, yes, getting into a flow state for a day or a half day can help you make great progress. However, when requirements are unstable, getting into a flow state runs the risk of us running as fast as possible in the wrong direction without any opportunity to reassess. The best case scenario is that we are very productive while in flow state. The worst case scenario is that we waste a lot of time before we realise we are going the wrong way. The good news is that with some training (time spent practicing personal work iterations) we'll find it much easier to quickly go into and out of a flow state. I have been practicing 25 minute iterations for many years now and I find it particularly easy to go into flow state on demand, leave flow state (if distracted by something external or at the end of an iteration) and then return to flow state as required. I'm actually writing this chapter in a 25 minute interval right now and writing about flow state made me realise I was actually just in that state!</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Frequent re-evaluation supported by iterations allows us to be more dynamic and able to quickly change direction the moment we see a better option. This is especially useful, because sometimes clarity only appears when we are part way through a coding task. There may come a point where you re-estimate the current task to be more difficult than originally estimated, subsequently de-prioritizing it in favor of other tasks that are now higher priority because they are easier to deliver.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Another name for this is time boxing, a well known productivity technique that can help us see when a task we are working on is taking too long - to the point where the cost to deliver it overwhelms the value of completing the task. When the cost of delivering a task outweighs the value it brings, or maybe through the process of working on a task we realize that it's not as useful or as valuable as we had hoped - that's when we need to reevaluate and potentially stop working on that task in favor of working on something that delivers more value for the cost required to deliver it.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">However, you should be wary of changing direction too quickly or too often. Chopping and changing between tasks too much can also be a recipe for getting nothing done. Also, this is not an excuse for avoiding tackling hard, difficult or time consuming tasks. High value tasks can take a long time - if we want the high value we have to put in the effort required. But we should still make space for regular breaks to ask ourselves questions like these:</p>
+            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
+                <li>Given the effort I'm continuing to invest and I am now realizing I still need to invest more - is it still worthwhile working on this task?</li>
+                <li>Now that I have worked on this task and I understand it better and know more about it - is it as valuable as I first thought?</li>
+                <li>How much more time is worth investing in this task?</li>
+            </ul>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
                 <h5 class="font-bold text-xl mb-2">HOW IT HELPS</h5>
                 <h6 class="font-bold text-lg mb-2">Thinking while working keeps you heading in the best direction and avoids wasted time spent moving in the wrong direction.</h6>
@@ -330,28 +366,45 @@
 
             <div class="bg-gray-100 p-8 rounded-lg mb-8">
                 <h3 class="font-serif text-2xl text-charcoal mb-4">Flow state</h3>
-                <p class="text-lg text-gray-600 font-light leading-relaxed mb-4">Flow is the state of being in the zone where we are fully immersed in what we are doing. While flow state can be very satisfying, it can also be dangerous if our work is heading in the wrong direction and we enter flow, it will likely be many hours before we realize the work we are doing is a waste of time.</p>
+                <p class="text-lg text-gray-600 font-light leading-relaxed mb-4">Flow is the state of being in the zone where we are fully immersed in what we are doing, to the point where we no longer notice the passing of time. Flow can be very satisfying and it can result in much productive work.</p>
+                <p class="text-lg text-gray-600 font-light leading-relaxed mb-4">But flow state can also be dangerous. If our work is heading in the wrong direction and we enter flow, it will likely be many hours before we realize the work we are doing is a waste of time.</p>
             </div>
 
             <h2 id="1-6-3-working-code" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.6.3 Keep your code working</h2>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Many developers spend much of their time debugging broken code. To some extent, debugging is always going to be necessary, but there are many times when it can be avoided. This boils down to my most sacred rule: <em>Keep your code working</em>.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Every commit to version control should be working code. Don’t tolerate broken code. Figure 1.6 shows efficient development in action. Development is taking our code through a succession of changes, repeatedly going from working state to working state.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Many developers spend much of their time debugging broken or badly behaving code. To some extent, debugging is always going to be necessary and it's a useful skill for us to develop. But there are many times when the problems that require debugging can be avoided.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">This boils down to what is essentially my most sacred rule of software development: <em>Keep your code working</em>.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Every commit to version control (aka Git) - at least to the best of our ability - should be working code. Of course, we'll make mistakes and sometimes we'll commit broken code - but we shouldn't be knowingly committing broken code unless there are some mitigating circumstances that justify otherwise (e.g. we are committing a fix for one extremely urgent bug that we know will cause another bug that must be solved later).</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It is so important and so fundamental for me to keep my code working, that I sometimes think everyone should already know it, yet I still see other developers working on changes or refactoring without so much as a hint of testing. Why are they surprised to later find that their code doesn’t work?</p>
+            <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
+                <h6 class="font-bold text-lg mb-2">Don’t tolerate broken code.</h6>
+            </blockquote>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Figure 1.5 shows efficient development in action. While working on new or updated features we take our code through a series of changes. The key milestone at each point is that we have working code. Development is taking our code through a succession of changes, repeatedly going from working state to working state.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We do not tolerate broken code. Whenever it is detected - through continuous testing and feedback - we fix it and immediately return our code to a working state.</p>
             
             <figure class="my-10">
                 <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
-                    <img src="./assets/1_4-working-state-to-working-state.png" alt="Figure 1.6: Efficient development in action" class="w-full" >
+                    <img src="./assets/1_4-working-state-to-working-state.png" alt="The process of development is taking your code through a series of changes from working state to working state" class="w-full" >
                 </div>
-                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.6: The process of development is taking your code through a series of changes from working state to working state</figcaption>
+                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.5: The process of development is taking your code through a series of changes from working state to working state</figcaption>
             </figure>
 
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It’s almost impossible for anyone to write working code without testing it. We must therefore cause code to be in a working state on purpose. It takes continuous effort and discipline to maintain our code in a working state.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Of course it's not as simple as it sounds. Our code often comes out broken. In fact, I'd say that the natural state of code is actually a state of being broken.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It's almost impossible for anyone to write working code without testing it. That's because there's so many more ways for code to be in a broken state than there are for it to accidentally be in a working state. We must therefore cause code to be in a working state on purpose. It takes continuous effort and discipline to maintain our code in a working state.</p>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
                 <h6 class="font-bold text-lg mb-2">The natural state of code is to be broken - only testing (feedback) can show that our code is working.</h6>
             </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The key to quickly creating working code is to work in short iterations, getting fast feedback and fixing broken code immediately. Through this book we’ll create a development pipeline with almost immediate feedback.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6"><strong>NOTE</strong> As readers have pointed out, there is nothing natural about code. What I'm trying to say is that if left to its own devices the process of coding usually results in broken code. That is to say that without testing, our code is most likely broken.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">That's not to say that code breaks by itself. If code works and you don't touch it, then it isn't just going to break by itself. It's only when adding new code or editing existing code that we risk breaking it. It also doesn't mean that code that seems to work now won't be found to be broken in the future. Any code can have latent issues waiting to be discovered.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The key to quickly creating working code is to work in short iterations, getting fast feedback and fixing broken code immediately. The faster we can go from making a code change, however small, to seeing it work (or not work), the more quickly we can develop working code. Through this book, especially in chapters 2, 3 and 4, we’ll create a development pipeline with almost immediate feedback. We'll also cover many practical ways to avoid broken code.</p>
+            <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
+                <h5 class="font-bold text-xl mb-2">HOW IT HELPS</h5>
+                <h6 class="font-bold text-lg mb-2">Keep your code working at all times and avoid wasted time spent on unnecessary debugging.</h6>
+            </blockquote>
 
             <h2 id="1-6-4-complexity" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.6.4 Manage complexity, avoid complication</h2>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The inescapable destiny of modern software development is complexity. Our products have an increasing number of moving parts: that’s the nature of complexity. As developers we must find ways of dealing with complexity before it can bring our pace of development to a crawl.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Have you ever felt overwhelmed by the complexity of your codebase? Or maybe thought that it has grown so complicated that it's out of control? Did you know that there is a difference between complexity and complication?</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The inescapable destiny of modern software development is complexity. Applications are getting bigger; business requirements are growing and customers are more demanding. The knock-on effect is that our software products are becoming ever more complex.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Our products have an increasing number of moving parts with exponentially growing interactions: that’s the nature of complexity. As developers we must find ways of dealing with complexity before it can bring our pace of development to a crawl and stunt our ability to get fast feedback.</p>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
                 <h6 class="font-bold text-lg mb-2">Complexity can’t be avoided, but we can manage it through our tools, techniques and process.</h6>
             </blockquote>
@@ -364,26 +417,64 @@
             </blockquote>
 
             <h2 id="1-6-5-cut-corners" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.6.5 Know when to cut corners</h2>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Getting to a solution quickly is tricky, but if you understand where shortcuts are ok, you can create a much quicker route to the finish line.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Getting to a solution quickly, artfully avoiding wrong turns and dead ends, is tricky to get right, but if you understand where shortcuts are ok, you can create a much quicker route to the finish line.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">I'm talking about things like this:</p>
+            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
+                <li>Does your code really need to be perfect? (Who even gets to decide what perfect means?) Ok and useful is preferable to almost perfect and not yet published.</li>
+                <li>Do you need automated testing? Often startups can't afford this level of investment in their code. (We'll talk about the tradeoffs of test driven development and automated testing in Chapter 5.)</li>
+                <li>Can you circumvent your company's usual traditions, process and conventions to demonstrate a groundbreaking new feature quickly? (Possibly in a testbed application, which we'll see in Chapter 4).</li>
+            </ul>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
                 <h6 class="font-bold text-lg mb-2">Perfection is the enemy of productivity.</h6>
             </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Does your code really need to be perfect? <em>Ok and useful</em> is preferable to <em>almost perfect and not yet published</em>. Learn where the acceptable boundaries are in your organization. When you know what you can and can’t get away with, you will find faster ways to deliver your code.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Learn where the acceptable boundaries are in your organization. When you know what you can and can't get away with, you will find faster ways to deliver your code. Of course if cutting corners generates technical debt, that is to say if it causes problems that we might have to fix later, I'd recommend keeping a list so we can remember to prioritize and fix them later on. We'll talk more about this in chapter 2.</p>
+            <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
+                <h5 class="font-bold text-xl mb-2">HOW IT HELPS</h5>
+                <h6 class="font-bold text-lg mb-2">Understand where it's ok to cut corners (and still keep your job). This gets you to the finish line faster and more directly.</h6>
+            </blockquote>
 
             <h2 id="1-6-6-feedback" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.6.6 Actively seek feedback</h2>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It’s not enough to just let feedback come to us. We need to purposefully construct our development process to create frequent opportunities for feedback. We can build a habit of asking questions that elicit feedback, like: <em>Do my latest code changes work as intended? Will the customer find value in this new feature?</em></p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Although gathering external feedback might be out of our control, there are many ways we can generate feedback within our personal development workflow that are directly under our control, including developing through small iterations, self review and test driven development.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It's not enough to just let feedback come to us. We need to purposefully construct our development process to create frequent opportunities for feedback.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">We can build a habit of asking questions (to ourselves, colleagues, managers, customers, etc.) that elicit feedback. Asking questions creates the right conditions for feedback to emerge. Questions like:</p>
+            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
+                <li>Will my ideas and design for the feature/code I'm planning work? What's the cheapest way to get feedback before investing more time?</li>
+                <li>Do my latest code changes work as intended? What tests can I run to prove that my code still works?</li>
+                <li>Will the customer find value in this new feature? How can I measure the value to the customer?</li>
+                <li>How will I test that my code is working once I deploy it to production?</li>
+            </ul>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The first two bullet points above are the easiest and we'll see lots of examples in the coming chapters. Answers to questions like in the third and fourth bullet points aren't so easy (it depends on the particular customer and your production environment!). But it's still worth asking these questions, because any attempt at thinking it through, understanding it, measuring it and getting some kind of answer that we can refine in the future means we are least heading in a non-random direction. Sometimes just asking the question to ourselves is enough to provoke thinking that leads to more refined questions, if not directly to solutions.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Although gathering external feedback from customers might be out of our control, there are many ways we can generate feedback within our personal development workflow that are directly under our control and can lead to better software and a better process. These include developing and testing through many small iterations, self review and test driven development, all of which we will see through the chapters of this book.</p>
+            <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
+                <h5 class="font-bold text-xl mb-2">HOW IT HELPS</h5>
+                <h6 class="font-bold text-lg mb-2">Feedback helps us build the understanding we need to make course corrections in the direction of better outcomes.</h6>
+            </blockquote>
 
             <h1 id="1-7-the-answer" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.7 The fastest way to write code - the answer</h1>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Now the answer you’ve all been waiting for… drum roll please. <em>What’s the fastest way to write code?</em></p>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
                 <h6 class="font-bold text-lg mb-2">It’s simple. Just don't write the code!</h6>
             </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The fastest code we can write is the code that we preemptively eliminate because we realize early that we don’t even need it. A sad fact of software development is that so much of the code we write is destined to go unused.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The main problem is that code is expensive to create and maintain. Code creates baggage that we must bear going into the future. Choose carefully the code that you decide to write. Be cautious where you invest your time! Decide to write code with the most obvious value and be wary of coding something with an unknown value.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">That sounds crazy I know, but if we could use a crystal ball to figure out which of our code is destined for the trash heap, we could simply not write that code in the first place and save ourselves a lot of time. The fastest code we can write is the code that we preemptively eliminate because we realize early that we don’t even need it. A sad fact of software development is the ultimate feedback we get when a feature or sadly even sometimes an entire product has been cut. So much of the code we write is destined to go unused.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">The main problem is that code is expensive. Code is costly to create. Code is costly to maintain. Code creates baggage that can slow us down and that we must bear going into the future.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Here's a less crazy way to look at it:</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6"><em>Choose carefully the code that you decide to write.</em></p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">As developers and humans we have limited capacity, so we must be cautious about where we invest our time! Actively deciding which code not to write is just as important as deciding what code <em>to</em> write. We should be writing code with the most obvious value and be wary of writing code that has an unknown value.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">I asked this question—"What's the fastest way to write code?"—because I hoped to make you think and because it highlights something important about prioritization. Thinking about where you can deliver the most value, thinking about the best place to invest your time - encouraging thought experiments like these are a kind of mental feedback that can put you on track to more effective software development.</p>
 
             <h1 id="1-8-recap" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.8 Philosophy recap</h1>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Effective software development is about producing code that is <em>working</em>, <em>reliable</em> and <em>valuable</em>. To achieve our goals we’ll create a development process guided by this philosophy:</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Effective software development isn't just about coding quickly, it's about producing code that exhibits these virtues:</p>
+            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
+                <li>Working: Code that is not working is at best not useful, at worst counterproductive.</li>
+                <li>Reliable: Code that is not reliable wastes time and frustrates consumers.</li>
+                <li>Valuable: Code that is not valuable will not be used. Time spent creating it was wasted.</li>
+            </ul>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">To produce code with these virtues requires a development process founded on solid principles:</p>
+            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
+                <li>Minimizing time to feedback: Getting feedback quickly is at the core of producing working and reliable code at a rapid pace.</li>
+                <li>Balancing value against cost: We should prioritize our work not just by the value to the customer, but also by the cost to deliver it.</li>
+                <li>Minimizing wasted time: Recognize when a particular task, technique or process is ultimately not contributing and ruthlessly eliminate it.</li>
+            </ul>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">To achieve our goals we’ll create a development process guided by this philosophy:</p>
             <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
                 <li>Develop software through iterations.</li>
                 <li>Embed thinking in your process.</li>
@@ -393,6 +484,7 @@
                 <li>Know when to cut corners.</li>
                 <li>Actively seek feedback.</li>
             </ul>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Through this book we'll work on creating a development process underpinned by continuous cycles of internal feedback, to implement the above philosophy to rapidly deliver software that is working, valuable and reliable.</p>
 
             <h1 id="1-9-ai" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.9 Can’t AI just do it all for me?</h1>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Unfortunately, quite often the code produced by AIs is simply broken. They have no notion of what it means to write <em>working code</em> and they certainly don’t have the ability to test the code that they write for us. So we are left to test and fix the broken code that AIs create for us.</p>
@@ -410,7 +502,7 @@
                 <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.7: What the Photosphere frontend will look like later in the book</figcaption>
             </figure>
 
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Photosphere is a photo gallery and backup tool. Initially we’ll be able to upload photos through a web portal and then browse them in the gallery. Toward the end of the book, we’ll exploring building desktop and mobile applications from a shared codebase.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Photosphere is a photo gallery and backup tool. Initially we’ll be able to upload photos through a web portal and then browse them in the gallery. Toward the end of the book, we’ll explore building desktop and mobile applications from a shared codebase.</p>
 
             <h1 id="1-11-overview" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.11 Book overview</h1>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In the coming chapters we’ll implement our philosophy, create our development process and actually build the Photosphere application.</p>
@@ -432,7 +524,7 @@
                 <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.9: The Photosphere example application: beyond fullstack - now supporting desktop and mobile frontends</figcaption>
             </figure>
 
-            <h1 id="1-12-summary" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">Summary</h1>
+            <h1 id="1-12-summary" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.12 Summary</h1>
             <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
                 <li>Continuous feedback is the foundation for delivering code that is working, reliable and valuable at a rapid pace.</li>
                 <li>The virtues we aspire to: <em>Working</em>, <em>Reliable</em>, and <em>Valuable</em>.</li>
