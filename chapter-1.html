@@ -141,9 +141,8 @@
         <!-- Main Article Content -->
         <article class="lg:w-3/4 max-w-3xl mx-auto lg:mx-0">
             <div class="inline-block w-16 h-1 bg-boutique-gold mb-8"></div>
-            <h1 id="working-and-valuable" class="font-serif text-5xl md:text-6xl text-charcoal mb-8 leading-tight">1 Working <span class="italic text-gray-500">and</span> valuable</h1>
+            <h1 id="working-and-valuable" class="font-serif text-5xl md:text-6xl text-charcoal mb-8 leading-tight">1 Working <span class="italic text-gray-500">and</span> valuable: Gearing your process for continuous feedback</h1>
             
-            <h2 class="font-serif text-3xl text-charcoal mb-6 mt-12">Gearing your process for continuous feedback</h2>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6"><em><strong>In this chapter, you will learn</strong></em></p>
             <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
                 <li>A philosophy for effective software development</li>
@@ -408,13 +407,29 @@
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
                 <h6 class="font-bold text-lg mb-2">Complexity can’t be avoided, but we can manage it through our tools, techniques and process.</h6>
             </blockquote>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Complication, on the other hand, is quite different. While complexity is a fact of life, complications are usually unnecessary. Strive for simplicity while coding: prefer simple code and solutions over complicated ones. Avoid complicated tools, techniques and processes.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Simple code is easier to understand and, most importantly, easier to test. And code that is easy to test is easier to <em>keep working</em>.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Another way code gets complicated is by <em>over engineering</em> or <em>future proofing</em>. It’s very liberating to understand that you should be coding for <em>now</em> and not so much for <em>later</em>.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Fortunately, we have many ways to tackle complexity while coding, including:</p>
+            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
+                <li>Creating abstractions;</li>
+                <li>Componentizing our code;</li>
+                <li>Using common conventions, patterns and terminology; and</li>
+                <li>Employing tools and processes to help us scale our development process.</li>
+            </ul>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Complication, on the other hand, is quite different from complexity. While complexity is a fact of life, complications are usually unnecessary, but they also conspire to slow us down.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">A truth that can be difficult to see is that we can create complex products (products with many interacting parts) that are built from simple, not complicated, parts. Building complex products from simple parts is an ongoing theme in this book.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6"><em>Strive for simplicity while coding: prefer simple code and solutions over complicated ones.</em></p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6"><em>Avoid complicated tools, techniques and processes.</em></p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">There are many benefits to writing simple code. To start, it is easier to understand. This is great when other people (or maybe your future self) have to work with your code. But the most substantial benefit of simple code is that simple code is easy to test, and code that is easy to test is easier to <em>keep working</em>.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">One way that code gets complicated is through optimization. So don't be too quick to optimize your code. Personally, I aim for good performance code, the best that I can achieve quickly anyway, but only when it doesn't sacrifice simplicity. There's a good reason Donald Knuth said that premature optimization is the root of all evil. Unnecessary optimizations, those that can't be justified or measured, waste our time and complicate our code for no good reason.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Another way that code gets complicated is by over engineering, also known as future proofing your code. Experienced developers recognize when they are doing this, because so often in the past they have overly-complicated their code, making it flexible enough to handle situations that never actually occurred. They later find they are bogged down by this code that was unnecessarily designed to handle situations that never happened.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It's very liberating to understand that you should be coding for now and not so much for later, but like anything in software development it's a balancing act that relies on our judgment and our experience (and sometimes a bit of luck, because we won't always get it right!).</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6"><em>The natural state of code is to be overly complicated.</em></p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">It's important to note that writing simple code isn't exactly easy. By default, our code seems to come out complicated and convoluted. It can take substantial effort (it gets easier with practice, though) to write our code to be as simple as it can be, but still do the job it needs to do.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Throughout this book we'll talk about ways to actively manage complexity. We'll see how to write simpler, less complicated, code. We'll learn how to let good design emerge naturally through continuous refactoring supported by good testing.</p>
             <blockquote class="border-l-4 border-boutique-gold pl-6 py-4 my-8 bg-gray-50 italic text-gray-700">
                 <h5 class="font-bold text-xl mb-2">HOW IT HELPS</h5>
                 <h6 class="font-bold text-lg mb-2">Avoid time wasted on unnecessarily complex and complicated code. Complexity can be managed. Complications should be avoided.</h6>
             </blockquote>
+            
 
             <h2 id="1-6-5-cut-corners" class="font-serif text-3xl text-charcoal mb-6 mt-12 scroll-mt-32">1.6.5 Know when to cut corners</h2>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Getting to a solution quickly, artfully avoiding wrong turns and dead ends, is tricky to get right, but if you understand where shortcuts are ok, you can create a much quicker route to the finish line.</p>
@@ -486,14 +501,16 @@
             </ul>
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Through this book we'll work on creating a development process underpinned by continuous cycles of internal feedback, to implement the above philosophy to rapidly deliver software that is working, valuable and reliable.</p>
 
-            <h1 id="1-9-ai" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.9 Can’t AI just do it all for me?</h1>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Unfortunately, quite often the code produced by AIs is simply broken. They have no notion of what it means to write <em>working code</em> and they certainly don’t have the ability to test the code that they write for us. So we are left to test and fix the broken code that AIs create for us.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">At this present point, the ability to create working and reliable code is still a necessary skill for developers. Not to mention the debugging skills we need to identify and fix problems in the code the AI has given us.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">AIs also aren’t going to be able to identify the <em>value</em> in what we do. We simply shouldn’t want an AI to take responsibility for what’s important to us, our team mates, our businesses and our customers. That is the kind of thing that we should decide.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">So what’s changed with AI? Honestly not a lot. My work seems to move more quickly now that I’m not manually running around on the internet doing research. My trusty AI does a lot of that for me now. But they don’t change the fundamental skills that we as humans need to produce code that is working, reliable and valuable. Indeed, building working feedback loops and getting fast feedback is just as important as ever.</p>
+            <h1 id="1-9-ai" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.9 Can't AI just do it all for me?</h1>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">I started writing this book before ChatGPT became mainstream, so much of the book was written before AI support became a big part of my development process. Since ChatGPT became mainstream, it, Copilot and now Claude feature regularly in my day to day work.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Unfortunately, quite often the code produced by the AIs is simply broken. This is because our current AIs aren't really that smart, they have no notion of what it means to write <em>working code</em> and they certainly don't have the ability to test the code that they write for us. So we are left to test and fix the broken code that AIs create for us. So at this present point, the ability to create working and reliable code is still a necessary skill for developers. Not to mention the debugging skills we need to identify and fix problems in the code the AI has given us.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">However I can see a time in the near future when AIs will have the ability to test the code that they create and assure us that the code works. I predict that this will be the next big leap forward for the AIs that are supporting developers. But still, what does <em>working code</em> even mean? How will future improved AIs understand our definition of working code? How will they know what the code is supposed to do? Us humans will still have to know enough about what working code looks like and what it looks like within our domain. We'll also need sufficient communication skills to be able to accurately describe to the AI what we expect. Understanding what <em>working code</em> means and what's required by our domain is still a set of skills that developers need now and will continue to need in the future.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">There's one big thing that's lacking from AIs that it seems like they'll never be able to do. AIs aren't going to be able to identify the value in what we do (at least I don't see it coming anytime soon). We simply shouldn't want an AI to take responsibility for what's important to us, our team mates, our businesses and our customers. That is the kind of thing that we should decide. It's also the kind of thing we should be able to change our mind on as new information comes in. So understanding how to prioritize what we do by its value will continue to be an important skill.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">So what's changed with AI? Honestly not a lot. My work seems to move more quickly now that I'm not manually running around on the internet doing research. My trusty AI does a lot of that for me now and is very good at putting together a starting point in code much more quickly than I could have done. And the advanced auto completion I now have in my IDE (VS Code + Copilot) makes creating and editing code move so much more quickly (except when Copilot occasionally adds a really subtle bug that I then have to debug for hours). So even though our new AI tools are amazing and can really improve our productivity (and occasionally severely hinder our productivity), they don't change the fundamental skills that we as humans need to produce code that is working, reliable and valuable. Indeed, building working feedback loops and getting fast feedback is just as important as ever.</p>
 
             <h1 id="1-10-photosphere" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.10 The example app: <em>Photosphere</em></h1>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">While this first chapter has been theoretical, the rest of the book is mostly practical. You can follow along with the coding and together we’ll build a fullstack application while applying the philosophy of rapid development. There’ll be plenty of simple examples, but we are also working towards a non-trivial example application called <em>Photosphere</em>.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">While this first chapter has been theoretical, the rest of the book is mostly practical, with some theory interspersed. Here's a taste of what's coming up.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">You can follow along with the coding and together we’ll build a fullstack application while applying the philosophy of rapid development. There’ll be plenty of simple examples, but we are also working towards a non-trivial example application called <em>Photosphere</em>.</p>
             
             <figure class="my-10">
                 <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
@@ -503,19 +520,25 @@
             </figure>
 
             <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Photosphere is a photo gallery and backup tool. Initially we’ll be able to upload photos through a web portal and then browse them in the gallery. Toward the end of the book, we’ll explore building desktop and mobile applications from a shared codebase.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Through building Photosphere we'll learn the techniques, habits and attitude we need to create a fast pace of development.</p>
 
             <h1 id="1-11-overview" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.11 Book overview</h1>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In the coming chapters we’ll implement our philosophy, create our development process and actually build the Photosphere application.</p>
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In chapters 2 and 3 we create a simple monolithic version of Photosphere as shown in figure 1.8. We’ll use this as a vehicle through which to explain the foundations of an effective development process.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">Chapter 1 has laid the theoretical groundwork for effective development through continuous feedback. In the coming chapters we’ll implement our philosophy, create our development process and actually build the Photosphere application.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In chapters 2 and 3 we create a simple monolithic version of Photosphere as shown in figure 1.7. We’ll use this as a vehicle through which to explain the foundations of an effective development process.</p>
             
             <figure class="my-10">
                 <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
                     <img src="./assets/1-6-photosphere-monolithic.png" alt="Monolithic Photosphere screenshot" class="w-full">
                 </div>
-                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.8: The Photosphere example application: the simple monolithic version</figcaption>
+                <figcaption class="text-sm text-gray-500 italic text-center mt-4">Figure 1.8: The Photosphere example application: the simple version</figcaption>
             </figure>
 
-            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In chapter 8 we’ll take our first steps beyond fullstack and extend Photosphere with a desktop application implemented with Electron and a mobile application implemented with Capacitor. All frontends will share the same backend as illustrated in figure 1.9.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In chapter 4 we'll explore the planning and prototyping that led to the development of Photosphere.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In chapter 5 we'll talk about testing and look at the test driven development (TDD) that created Photosphere's gallery layout algorithm.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In chapter 6 we'll talk about how to choose the right solutions to problems through the development process.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In chapter 7 we'll learn how to be more effective at debugging and problem solving.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In chapter 8 we’ll take our first steps beyond fullstack and extend Photosphere with a desktop application implemented with Electron and a mobile application implemented with Capacitor. All frontends will share the same backend as illustrated in figure 1.8.</p>
+            <p class="text-lg text-gray-600 font-light leading-relaxed mb-6">In Chapter 9 we'll wind up with a review, what an effective process looks like and how to scale yourself and your team.</p>
             
             <figure class="my-10">
                 <div class="bg-gray-100 p-8 rounded-lg text-center text-gray-500 italic">
@@ -527,11 +550,23 @@
             <h1 id="1-12-summary" class="font-serif text-4xl text-charcoal mb-6 mt-16 scroll-mt-32">1.12 Summary</h1>
             <ul class="list-disc pl-6 space-y-2 text-lg text-gray-600 font-light mb-8">
                 <li>Continuous feedback is the foundation for delivering code that is working, reliable and valuable at a rapid pace.</li>
-                <li>The virtues we aspire to: <em>Working</em>, <em>Reliable</em>, and <em>Valuable</em>.</li>
-                <li>Principles of effective development: Minimizing time to feedback, balancing value against cost, and minimizing wasted time.</li>
-                <li>Our philosophy: Iterations, embedded thinking, keeping code working, managing complexity, simplicity, cutting corners when appropriate, and actively seeking feedback.</li>
-                <li>Choose carefully where to invest your capacity.</li>
-                <li>Photosphere is the application we are building to demonstrate a fast development process with continuous feedback.</li>
+                <li>The virtues we aspire to for our code:<br>
+                ◦ Working: Code that is not working is at best not useful, at worst counterproductive.<br>
+                ◦ Reliable: Code that is not reliable wastes time and frustrates consumers.<br>
+                ◦ Valuable: Code that is not valuable will not be used. Time spent creating it was wasted.</li>
+                <li>The principles of effective development:<br>
+                ◦ Minimizing time to feedback: Getting feedback quickly is at the core of rapid development<br>
+                ◦ Balancing value against cost: We should prioritize our work not just by the value to the customer, but also by the cost to deliver it<br>
+                ◦ Minimizing wasted time: Understand what we are doing that is ultimately not contributing and ruthlessly eliminate it</li>
+                <li>Our philosophy for effective development:<br>
+                ◦ Successful software development is done through iterations, including gaps for rest and thinking<br>
+                ◦ Embed thinking in your process to help avoid wasted time heading in the wrong direction.<br>
+                ◦ The number one rule of development: Keep your code working.<br>
+                ◦ Modern applications tend towards complexity, but complexity can be managed.<br>
+                ◦ Keep your code simple; try to avoid complications.<br>
+                ◦ Cut corners where possible, but only when it's ok to do that.</li>
+                <li>As developers we only have limited capacity, yet the amount of software to build is potentially limitless, so we should choose carefully where to invest our capacity.</li>
+                <li>Photosphere is the application we are building through this book to demonstrate a fast development process with continuous feedback.</li>
             </ul>
         </article>
 
